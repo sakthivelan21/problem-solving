@@ -1,4 +1,5 @@
 # problem-solving
+I am trying to create a repo for me to remember problem solving approach whenever i encounter a new approach
 
 ###### tricks to remember
 
@@ -8,5 +9,5 @@
 
 + left-shift-array problem in c
 + minimum adjacent pair sum in c
-+ four digit integers count in c
++ four digit integers count in python
 

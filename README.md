@@ -1,3 +1,12 @@
 # problem-solving
 
-trying to add interesting problems into git for me to look for reference
+###### tricks to remember
+
+❖ coding-tricks
+
+###### problems in this repo
+
++ left-shift-array problem in c
++ minimum adjacent pair sum in c
++ four digit integers count in c
+

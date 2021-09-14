@@ -8,3 +8,10 @@ ctr - represent the necessary jump to be made
 arr[(index+ctr)%N]
 
 comes in handy to reduce code length and good code
+
+
+to convert the ascii value in integer type into character 
+
+char c=(char)86;
+int c=(int)'a';
+

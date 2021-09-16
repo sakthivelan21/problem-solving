@@ -10,4 +10,4 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 + left-shift-array problem in c
 + minimum adjacent pair sum in c
 + four digit integers count in python
-
++ break word at vowels in c

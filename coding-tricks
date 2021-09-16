@@ -1,17 +1,28 @@
-To make a circular iteration motion inside a list or string with index
-we can use modulo operator with the counter value to make the motion
+# Trick 1
 
-N- represent the total length of the array 
-index - represent the movement 
-ctr - represent the necessary jump to be made 
+	* To make a circular iteration motion inside a list or string with index.
 
-arr[(index+ctr)%N]
+	* we can use modulo operator with the counter value to make the motion
 
-comes in handy to reduce code length and good code
+		N- represent the total length of the array 
 
+		index - represent the movement 
 
-to convert the ascii value in integer type into character 
+		ctr - represent the necessary jump to be made 
 
-char c=(char)86;
-int c=(int)'a';
+		arr[(index+ctr)%N]
 
+		comes in handy to reduce code length and good code
+
+# Trick 2
+
+	* to convert the ascii value in integer type into character 
+
+		char c=(char)86;
+		int c=(int)'a';
+
+# Trick 3
+	
+	* to print the string from the particular position to the end in c
+
+		printf("%s",&string[startIndex]); where startIndex will be the index specified by us

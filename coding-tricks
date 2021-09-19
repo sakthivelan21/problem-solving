@@ -26,3 +26,9 @@
 	* to print the string from the particular position to the end in c
 
 		printf("%s",&string[startIndex]); where startIndex will be the index specified by us
+
+# Trick 4
+
+	* to concatenate two numbers in c
+
+		a = pow(a,log(n)+1)+n 

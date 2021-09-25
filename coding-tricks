@@ -32,3 +32,17 @@
 	* to concatenate two numbers in c
 
 		a = pow(a,log(n)+1)+n 
+
+# Trick 5 
+
+	* to convert an array of numbers to a integer ( [1,2,3,4,5] to 12345)
+
+		5+4*10 -> 45
+
+		45+ 3*100 -> 345
+
+		345 + 2*1000 -> 2345
+
+		2345 + 1*10000 -> 12345
+
+	* this way can save lot of rather than using tough approach 

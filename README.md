@@ -11,3 +11,4 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 + minimum adjacent pair sum in c
 + four digit integers count in python
 + break word at vowels in c
++ subtract from odd digits removed value in c

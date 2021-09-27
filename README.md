@@ -1,6 +1,7 @@
 # problem-solving
 I am trying to create a repo for me to remember problem solving approach whenever i encounter a new approach
 
+sriram demo
 ###### tricks to remember
 
 ❖ coding-tricks

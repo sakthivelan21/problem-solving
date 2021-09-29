@@ -1,7 +1,6 @@
 # problem-solving
 I am trying to create a repo for me to remember problem solving approach whenever i encounter a new approach
 
-sriram demo
 ###### tricks to remember
 
 ❖ coding-tricks
@@ -13,3 +12,4 @@ sriram demo
 + four digit integers count in python
 + break word at vowels in c
 + subtract from odd digits removed value in c
++ rising sequence problem in python

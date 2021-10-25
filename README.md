@@ -13,3 +13,4 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 + break word at vowels in c
 + subtract from odd digits removed value in c
 + rising sequence problem in python
++ two dimensional array using dynamic memory allocation in c

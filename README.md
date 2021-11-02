@@ -16,3 +16,4 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 + two dimensional array using dynamic memory allocation in c
 + two 2d array passing as parameter in c
 + bin to hexadecimal in c with dynamic memory allocation and concatenation of arrays
++ array sorting using pass by reference for two dimensional arrays both column and row sorting

@@ -3,7 +3,8 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 
 ###### tricks to remember
 
-❖ coding-tricks
+
+[Coding Tricks](https://github.com/sakthivelan21/problem-solving/blob/main/coding-tricks.md)
 
 ###### problems in this repo
 

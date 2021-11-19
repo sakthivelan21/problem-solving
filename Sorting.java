@@ -1,10 +1,9 @@
-import java.util.*; 
-
+import java.util.*;
 public class Test{
- 
+
     public static void main(String[] args){
         String[] array={ "Sakthi","Abinaya","Velan","Kiara advani","Kiara adwani","Abinay"};
-        
+
         for (int i=0;i<array.length;i++)
         {
             int index=i;
@@ -16,8 +15,8 @@ public class Test{
                     index=j;
                 }
             }
-            String str=array[i]; 
-            array[i]=array[index]; 
+            String str=array[i];
+            array[i]=array[index];
             array[index]=str;
         }
         for(int i=0;i<array.length;i++)

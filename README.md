@@ -19,3 +19,5 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 + bin to hexadecimal in c with dynamic memory allocation and concatenation of arrays
 + array sorting using pass by reference for two dimensional arrays both column and row sorting
 + msb bit solving problem
++ added permutation zoho question 
++ IrregularX shape problem

@@ -21,3 +21,4 @@ I am trying to create a repo for me to remember problem solving approach wheneve
 + msb bit solving problem
 + added permutation zoho question 
 + IrregularX shape problem
++ digit to binary conversion in recursive function  

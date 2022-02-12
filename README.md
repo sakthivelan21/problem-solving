@@ -1,12 +1,12 @@
 # problem-solving
 This repos contains some problem solving questions and algorithms
 
-#### tricks to remember
+#### simple coding tricks to remember
 
 
 [Coding Tricks](https://github.com/sakthivelan21/problem-solving/blob/main/coding-tricks.md)
 
-#### coding-problem folder
+#### coding-problems folder
 
 + left-shift-array problem in c  
 + minimum adjacent pair sum in c  
@@ -22,9 +22,12 @@ This repos contains some problem solving questions and algorithms
 + added permutation zoho question   
 + IrregularX shape problem  
 + digit to binary conversion in recursive function  
++ Form numbers problem 
++ Molecular Weight Finding Problem
++ va_args using in c
 
 
-#### c notes
+#### c-notes
 + Data structures  
 	+ Arrays
 	+ Dynamic Array
@@ -46,8 +49,8 @@ This repos contains some problem solving questions and algorithms
 	+ Selection sort
 	+ Merge sort
 
-#### C# codes
-+ Array
+#### C#-code
++ [Array](https://github.com/sakthivelan21/problem-solving/blob/main/csharp-code/Arrays)
 + Array Methods
 + Two Dimensional Array
 + String Methods

@@ -1,6 +1,23 @@
 # problem-solving
 This repos contains some problem solving questions and algorithms
 
+### problem solving approach
+
+1. Identify and Understand the nature of problem
+
+	What is the problem 
+
+	Understand the problem occurence
+
+	Think all the alternatives test case  and issues related in problem
+
+2. Research & Refine the problem
+
+	Try to Research for the alternative approaches to that problem
+
+	It helps to find many ways to approach the problem with other people code
+
+	
 #### simple coding tricks to remember
 
 
@@ -25,6 +42,10 @@ This repos contains some problem solving questions and algorithms
 + Form numbers problem 
 + Molecular Weight Finding Problem
 + va_args using in c
++ EmployeeExperienceDetails in javascript
++ FindingPowerOfValue
++ NumberPattern  
++ StringExtractProblem  
 
 
 #### c-notes
@@ -80,3 +101,8 @@ This repos contains some problem solving questions and algorithms
 + Exception Handling
 + Reflection Examples
 + Event Handling
+
+#### Security-algorithms
++ CaesarCipher
++ PlayFairCipher
++ HillCipher

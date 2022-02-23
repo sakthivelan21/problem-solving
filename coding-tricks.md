@@ -120,3 +120,44 @@ some Tricks i learned from others
 		}
 
 ```
+
+## To Check whether the given number is a power of number or not
+
+```
+		we have to check whether 
+
+		125 is a power of 5 or not 
+
+		we know that and we use logarithms to make the value easy to find
+
+		5^X =125 , we need to get value 3
+
+
+
+		take log on both sides
+
+
+
+		log(5^X)=log(125)
+
+		X*log(5)=log(125)
+
+		X=log(125)/log(5)
+
+		if X is a whole number without floating value then 125 is a power of 5
+		
+		
+		implementation
+		
+		from math import log,floor,ceil
+		def isPowerValue(number,base):
+			#because log1 is 0
+			if base==1:
+				return False
+			value=round(log(number)/log(base),8)
+			# checking for floating values in the result
+			if floor(value)==ceil(value):
+				return True
+			return False
+```   
+

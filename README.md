@@ -145,7 +145,7 @@ if you find any issues in my code feel free to raise a issue and i try to fix it
 + [DES Cipher](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/DesCipher.java)
 + [Diffie - Helman Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/DiffieHelmanAlgorithm.java)
 + [MD5 Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/MD5Algorithm.java)
-+ [RSA Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/Rsa-algorithm)
++ [RSA Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/RsaAlgorithm.java)
 + [SHA-1 Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/ShaAlgorithm.java)
  
 

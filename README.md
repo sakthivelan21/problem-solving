@@ -142,3 +142,10 @@ if you find any issues in my code feel free to raise a issue and i try to fix it
 + [Vigenere Cipher](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/VigenereCipher.java)
 + [RailFence Cipher](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/RailFenceCipher.java)
 + [Row Column Transposition Cipher](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/RowColumnTranspositionCipher.java)
++ [DES Cipher](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/DesCipher.java)
++ [Diffie - Helman Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/DiffieHelmanAlgorithm.java)
++ [MD5 Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/MD5Algorithm.java)
++ [RSA Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/Rsa-algorithm)
++ [SHA-1 Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/ShaAlgorithm.java)
+ 
+

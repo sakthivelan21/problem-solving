@@ -147,5 +147,5 @@ if you find any issues in my code feel free to raise a issue and i try to fix it
 + [MD5 Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/MD5Algorithm.java)
 + [RSA Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/RsaAlgorithm.java)
 + [SHA-1 Algorithm](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/ShaAlgorithm.java)
- 
++ [Digital Signature Standard](https://github.com/sakthivelan21/problem-solving/tree/main/SecurityAlgorithms/DigitalSignatureAlgorithm.java)
 

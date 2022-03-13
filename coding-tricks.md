@@ -160,4 +160,51 @@ some Tricks i learned from others
 				return True
 			return False
 ```   
+## Displaying a two dimensional array from a single dimensional matrix 
+```
+		#include<stdio.h>
+		#include<stdlib.h>
+		/*
+			displaying a two dimensional array from a single dimensional matrix 
+			
+			input
+			
+				4 5
+				a a g d e
+				f o y k y
+				o v d o b
+				f s c l r
+			
+			output
 
+			a a g d e
+			f o y k y
+			o v d o b
+			f s c l r
+		*/
+		void display_array(int R,int C,char* matrix)
+		{
+			for(int i=0;i<R;i++)
+			{
+				int r = i*C;
+				for(int j=0;j<C;j++)
+				{
+				    printf("%c ",matrix[r+j]);
+				}
+				printf("\n");
+			}
+		}
+		int main()
+		{
+			int R,C;
+			scanf("%d%d",&R,&C);
+			char matrix[R][C];
+			for(int i=0;i<R;i++)
+			{
+				for(int j=0;j<C;j++)
+				    scanf(" %c",&matrix[i][j]);
+			}
+			display_array(R,C,matrix);
+			return 0;
+		}
+```

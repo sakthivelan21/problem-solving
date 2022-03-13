@@ -80,6 +80,7 @@ if you find any issues in my code feel free to raise a issue and i try to fix it
 + NumberPattern  
 + StringExtractProblem  
 + [Sub Matrix Sum from top left matrix (dynamic problem)](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/sub_matrix_sum_from_top_left.py)
++ [Finding Starting Position in Matrix using array pointer](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/find-starting-position.c)
 
 ## c-notes
 + Data structures  

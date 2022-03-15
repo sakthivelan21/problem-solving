@@ -81,7 +81,9 @@ if you find any issues in my code feel free to raise a issue and i try to fix it
 + StringExtractProblem  
 + [Sub Matrix Sum from top left matrix (dynamic problem)](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/sub_matrix_sum_from_top_left.py)
 + [Finding Starting Position in Matrix using array pointer](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/find-starting-position.c)
-+ [LARGEST AND SMALLEST UNIT DIGIT NUMBERS DIFFERENCE](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/largest_and_smallest_digit_difference.c)
++ [LARGEST AND SMALLEST UNIT DIGIT NUMBERS DIFFERENCE](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/largest_and_smallest_unit_digit_difference.c)
+
+
 
 ## c-notes
 + Data structures  

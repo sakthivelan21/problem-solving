@@ -1,5 +1,6 @@
 # C Notes
-
+This repo contains more source code and stuffs related to C. If you like to know more about C, then  look into [History and Features of c](https://github.com/sakthivelan21/problem-solving/blob/main/c-notes/history-of-c.md)
+	
 + Data structures  
 	+ Arrays
 	+ Dynamic Array

@@ -40,6 +40,8 @@
 
 + Riding on these advantages, C became dominant and spread quickly beyond Bell Labs replacing many well-known languages of that time, such as ALGOL, B, PL/I, FORTRAN, etc. C language has become available on a very wide range of platforms, from embedded microcontrollers to supercomputers.
 
+
+
 ## About Header Files 
 
 + The first and foremost component is the inclusion of the Header files in a C program. 
@@ -99,6 +101,33 @@ $./object_file
 
 ```
 
+
+## Compilation Process in c
+
++ The c compilation process converts the source code taken as input into the object code or machine code.
+
++ The compilation process is being done by the `compiler`. 
+
++  The compilation process can be divided into four steps, i.e., `Pre-processing`, `Compiling`, `Assembling` and `Linking`.
+
++ Pre-Processing
+	+  The preprocessor takes the source code as an input, and it removes all the comments from the source code. 
+	+ The preprocessor takes the preprocessor directive and interprets it. 
+	+ For example, if <stdio.h>, the directive is available in the program, then the preprocessor interprets the directive and replace this directive with the content of the 'stdio.h' file.
+
++ Compiling
+	+ The compiler will receive the code that was pre-processed and it will convert the  pre-processed code into assembly code.
+
++ Assembling by Assembler
+	+ The Assembler will convert the assembly code into object code.
+	+ The object code is saved into a object file
+
++ Linking by Linker
+	+ All the programs written in C use library functions. These library functions are pre-compiled, and the object code of these library files is stored with '.lib' (or '.a') extension.
+	+ The main working of the linker is to combine the object code of library files with the object code of our program. 
+	+ The name of the executable file is the same as the source file but differs only in their extensions. 
+	+ In DOS, the extension of the executable file is '.exe', and in UNIX, the executable file can be named as 'a.out'.
+
 ## Terminologies in C
 
 ### TOKENS 
@@ -140,6 +169,7 @@ do           if          static     while
 + These are user-defined names consisting of an arbitrarily long sequence of letters and digits with either a letter or the underscore(_) as a first character. 
 
 + You cannot use keywords as identifiers; they are reserved for special use.
++ The length of the identifiers should not be more than 31 characters.
 
 ### CONSTANTS:
 
@@ -179,14 +209,119 @@ do           if          static     while
 
 ### VARIABLES TYPE AND SCOPE 
 
+```
+# variable declaration
+type variable_name
+```
+
 + local variable - declared within the block 
+```
+void function_name(){
+	// local variable
+	int a = 10;
+}
+```
 
 + global variable - accessible from any block 
+```
+int value = 10 ; // global variable
+void function_name(){
+	// local variable
+	int a = 10;
+}
+```
 
-+ static vairable - A variable that retains its value between multiple function calls is known as static variable.  value will be modified dynamically 
++ static vairable - A variable that retains its value between multiple function calls is known as static variable.  value will be modified dynamically.
+```
+#include<stdio.h>
+
+/*
+Every time you call this function static variable value will be incremented value
+and the value of x remains the same 
+
+*** output ***
+
+11 11
+11 12
+11 13
+11 14
+11 15
+
+*/
+void function_name(){
+	int x = 10;
+	static int y = 10;
+	printf("%d %d\n",++x,++y);
+} 
+
+void main(){
+	for(int i=0;i<5;i++)
+		function_name();
+}
+```
 
 + Automatic Variable  - All variables in C that are declared inside the block, are automatic variables by default. We can explicitly declare an automatic variable using auto keyword.Automatic variables are similar as local variables.
+```
+void main(){  
+int x=10;//local variable (also automatic)  
+auto int y=20;//automatic variable  
+} 
+```
 
-+ External Variable -External variable can be shared between multiple C files.We can declare external variable using extern keyword. 
++ External Variable -External variable can be shared between multiple C files.We can declare external variable using extern keyword in a header file. 
+```
+#myfile.h
+extern int x=10;
+
+# test.c
+
+#include "myfile.h"  
+#include <stdio.h>  
+void printValue(){  
+	printf("Global variable: %d", x);  
+}  
+
+```
+
+### Data type in c 
++ A data type specifies the type of data that a variable can store such as integer, floating, character, etc. 
++ Basic Data type
+	| Data Type     | size   | Range
+	|-----------    | -----  | -------
+	| int           | 2 byte | -32768 to 32767
+	| signed int    | 2 byte | -32768 to 32767
+	| unsigned int  | 2 byte |  0 to 65535
+	| short         | 2 byte | -32768 to 32767
+	| short int     | 2 byte | -32768 to 32767
+	| char          | 1 byte | -128 to 127
+	| signed char   | 1 byte | -128 to 127
+	| unsigned char | 1 byte |  0 to 255
+	| float         | 4 byte | 
+	| double        | 8 byte |
+	| long int      | 4 byte |
+	| long double   |10 byte |
++ Derived Data Type
+	+ array
+	+ pointer
+	+ structure
+	+ union
+
++ Enumeration  Data Type
+	+ enum
+
++ Void Data Type
+	+ void 
+
+### Format specifier in c
++ The Format specifier is a string used in the formatted input and output functions. The format string determines the format of the input and output. The format string always starts with a '%' character.
++ you can refer all the format specifier - https://www.javatpoint.com/c-format-specifier
+
+### Memory allocation and Garbage collection in c
+
++ The lack of a "heap" or "garbage collection" feature in C is both one of the great strengths of the language and at the same time is likely reason that the average programmer will never develop or maintain a major C application during their career.  
+
++ C provides a simple feature using the malloc() and free() functions that allows a programmer to request a certain amount of memory be allocated dynamically.
+
++  Kernighan and Ritchie knew "garbage collection" was difficult. So they left it out of the C language and put it into a run-time library.  
 
 

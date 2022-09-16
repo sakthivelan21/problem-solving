@@ -1,4 +1,13 @@
-# History of Java
+# Java Notes 
+    This repo contains source code of java concepts and oops.
+
+### Codes in this repo
+
++ [Simple Hello World Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/HelloWorld.java)
++ [Command Line Arguments Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/)
++ [](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/)
+
+### History of Java
 
 * Java was developed by `James Gosling`   and team in `1991 -1993` as a `system independent language`.
 
@@ -39,159 +48,68 @@
 
 + Resources required to run the bytecode are made available by the `Java Virtual Machine`, which `calls the processor` to `allocate the required resources`.
 
-### Procedural Programming vs Object Oriented Programming (OOP)
+### DATA TYPES in java
 
-#### Procedural Programming
+* `primitive data type`: (build in types) (java doesn't support unsigned numbers )
 
-+ Procedural programming involves executing a step-by-step list of instructions in order to complete the given task.
+    * byte -  8 bit 
 
-+ In this approach, the whole program forms a single part having a sequential flow.
+    * short - 2 bytes
 
-+ It decomposes the task into variables, data structures and subroutines.
+    * int -   4 bytes
 
-+ they can be invoked at any given time in order to complete the  intended function.
+    * long -  8 bytes
 
-+ These procedural languages are extremely powerful. eg:- Fortran, Pascal, COBOL and C.
+    * boolean - 1 bit
 
-### Procedural programming limitations:
+    * float - 4 bytes
 
-+ It is difficult to upgrade and debug the code as length of the code increases.
+    * double - 8 bytes
 
-+ Functions have unrestricted access to the global data. so data is exposed to the whole program and security cannot be ensured.
+    * char - 2 bytes
 
-+ Importance is given to the operations on data and not on data itself.
+* `non-primitive types`:
 
-+ It's quite difficult to create user defined data types and this tends to reduce the extensibility of the program. 
+    * these ar the class and interfaces types that are defined by the user.
 
+### type casting  or type conversion 
 
-### Object Oriented Programming
+	* to convert the data from one type to another type in the program 
 
-+ object oriented programming attempts to provide the model for developing programs and applications based on objects and classes.
+	* example : double d=6.8;int value=(int)d;
 
-+ Objects form the basic unit of object oriented programming.
+### Static variable
 
-### Object
+* generally when a object of a class is created a copy of it is stored.
 
-+ Object in oop language refers to a specific type or instance of a class.
+* if the variable is declared static then there will be only one variable copy in the memory. 
 
-+ Example : human is an example of an object . it has similar structure to other objects but have individual characteristics as well.
+### Static import
+*  If we use static import of the Math class, there is no need to use class reference with every method. 
+```
+import static java.lang.Math.*;
+public class Hello{
+    public static void main(String[] args)
+    {
+        // we can call the methods simply by their name without the package name
+        System.out.println(sqrt(100));
+    }
+}
+```
 
-### Need for object oriented programming && Advantage of object oriented programming over procedural programming:
+### Final Keyword
 
-+ `Reusability` : to reuse the previously defined objects and classes  of the code without any modification like inheritance.
+* The value of a variable declared `final` cannot be changed in the program.
+* It makes the varable as a `constant`
 
-+  `Modular Structure` : to provide a clear and modular structure for program development. this enables us to define the abstract data types where implementation details can be kept hidden.
+```
+final double PI = 3.14159;
+```
 
-+ `Easy to maintain and upgrade` : to maintain and modify the existing code. it is easier to locate and correct the bugs in the code.
+### Chain of Assignment
 
-+ `Inheritance` : to eliminate the redundant code and use existing classes.
-
-+ `Data hiding` : The programmer can hide the data and functions in a class from another class. It helps in building secure programs.
-
-### Data Abstraction 
-
-+ Data abstraction is the `process of extracting the most relevant characteristics of object` data that are required by the program.
-
-### Encapsulation
-
-+ Encapsulation is the mechanism of `wrapping the data and methods` into a `single unit` called `class`.
-
-+ In encapsulation, the data of the class can be kept hidden so that it cannot be accessed from outside of the class and accessible only by using methods of that class(private access specifier stuff).
-
-
-### Class
-
-* A class is a user defined blueprint or prototype from which objects are created.  
-
-* It represents the set of properties or methods that are common to all objects of one type.
-
-* It has data members and methods in it.
-
-### Access Control to Data Variables and Methods : (Access specifiers)
-
-* `public` : 
-    
-    + it is applied to variables , constructors, methods and classes. 
-    
-    + If any of these data members are declared public, they are accessible to all classes in all the packages.
-
-* `default` : 
-    
-    * It can be applied to variables, constructors, methods and classes. 
-    
-    * When no access specifier is used, it implies the  default access. 
-    
-    * Here, the member can be accessed by classes within the same package.
-
-* `protected` : 
-    
-    * it is applied to variables, constructors, methods and nested classes(excluding top level classes).  
-    
-    * The member declared as protected is accessed by the same class, it's subclasses and the classes in the same package.
-
-* `private` : 
-    
-    * It is applied to variables, constructors, methods and nested classes (excluding top level classes).  
-    
-    * A private member can be accessed by the same class where it is defined and it cannot be accessed by subclasses and from other external classes.
-
-### Inheritance
-
-* Inheritance in Java is a mechanism in which one object `acquires all the properties and behaviors of a parent object`.
-
-* The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. 
-		
-* When you inherit from an existing class, you can reuse methods and fields of the parent class. 
-
-* Moreover, you can add new methods and fields in your current class also.
-
-* Inheritance creates a `parent-child relationship`.
-
-* Reason : we use inheritance for `code reusability` and `method overriding`.
-
-* `Super Class/Parent Class`: 
-    
-    * Superclass is the class from where a subclass inherits the features. 
-
-    * It is also called a base class or a parent class.
-
-* `Sub Class/Child Class`:
-    
-    *  Subclass is a class which inherits the other class. 
-
-    *  It is also called a derived class, extended class, or child class. 
-	
-### Polymorphism 
-
-* Polymorphism in Java is a concept by which we can perform a single action in different ways. 
-
-* Polymorphism is derived from 2 Greek words: poly and morphs. The word `poly` means `many` and `morphs` means `forms`. 
-
-* So `polymorphism` means `many forms`.
-
-* There are two types of polymorphism in Java: `compile-time` polymorphism and `runtime` polymorphism. 
-
-* We can perform polymorphism in java by `method overloading` and `method overriding`.
-
-* If you `overload a static method` in Java, it is the example of `compile time polymorphism`.
-
-* `Runtime polymorphism` or `Dynamic Method Dispatch` is a process in which a `call to an overridden method is resolved at runtime rather than compile-time`.  
-
-* In this process, an overridden method is called through the `reference variable of a superclass`.
-
-* If the reference variable of Parent class refers to the object of Child class, it is known as `upcasting`.
-
-
-### Object oriented analyis design metrics fo a well defined class :
-
-* `High cohesion` : cohesion implies the extend to which the class is dependent on other classes in the system
-
-* `Low coupling` : coupling is a measure of the strength of association established by a connection from one entity to another.
-
-* `sufficiency` : enough characteristic requirements.
-
-* `completeness` : must satisfy all the characteristic requirements to capture all the meaningful characteristics of abstraction 
-
-* `primitiveness` : it keeps compeleteness in check.
-
+```
+int a,b,c,d;
+a=b=c=10;
+```
 

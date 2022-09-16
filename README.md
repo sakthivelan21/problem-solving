@@ -16,7 +16,7 @@ if you find any issues in my code feel free to raise a issue and i try to fix it
 
 + [Security Algorithms](https://github.com/sakthivelan21/problem-solving/blob/main/SecurityAlgorithms)
 
-+[Java Notes](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes)
++ [Java Notes](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes)
 
 ## problem solving approach
 

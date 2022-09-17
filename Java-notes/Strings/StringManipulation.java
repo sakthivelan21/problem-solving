@@ -17,10 +17,19 @@ public class StringManipulation{
 		-1
 		sakthi
 		SAKTHI
-		 Hi I am Sakthi. I love myself 
-		 Hi I bm Sbkthi. I love you 
+		Hi I am Sakthi. I love myself 
+		Hi I bm Sbkthi. I love you 
 		1
 		Hi I am Sakthi. I love you
+		to check if string starts with 'Sak' true
+		to check if string 'Sakthi' ends with 'hi' true
+		to compare ignoring case 0
+		value is 83 in char is S
+		value is 97 in char is a
+		value is 107 in char is k
+		value is 116 in char is t
+		value is 104 in char is h
+		value is 105 in char is i
 
 		
 	*/
@@ -92,7 +101,26 @@ public class StringManipulation{
 		
 		// To remove leading and trailing spaces
 		System.out.println(text.trim());
+
+		//To check if a string starts with the given subString
+		System.out.println("to check if string starts with 'Sak' " + a.startsWith("Sak"));
+
+
+		// To check if a string ends with the given subString
+		System.out.println("to check if string 'Sakthi' ends with 'hi' " + a.endsWith("hi"));
 		
+		String x = "Sakthi",y="SAKTHI";
 		
+		System.out.println(" to compare ignoring case "+ x.compareToIgnoreCase(y));
+
+		// to get the bytes of the string
+		byte[] arr = x.getBytes();
+
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(" value is "+arr[i] + " in char is "+ (char)arr[i]);
+		}
+
+
 	 }
 }

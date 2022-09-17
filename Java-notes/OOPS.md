@@ -155,7 +155,7 @@
 
         * In the image Abouve, class A serves as a base class for the derived class B.
 
-        + [Single Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/SingleInheritance.java)
+        + [Single Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/SingleInheritance.java)
 
     * Hierarchical Inheritance
 
@@ -163,7 +163,7 @@
         
         * In the below image, class A serves as a base class for the derived class B, C.
 
-        + [Hierarchical Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/HierarchicalInheritance.java)
+        + [Hierarchical Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/HierarchicalInheritance.java)
 
     * Multilevel Inheritance
 
@@ -173,7 +173,7 @@
 
         * In Java, a class cannot directly access the grandparent’s members. That means class C cannot directly access class A members 
 
-        + [Multi-level Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultilevelInheritance.java)
+        + [Multi-level Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/MultilevelInheritance.java)
 
     * Multiple Inheritance 
 
@@ -187,7 +187,7 @@
 
         * But in java, `interface` supports multiple inheritance.
 
-        + [Multiple Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultipleInheritance.java)
+        + [Multiple Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/MultipleInheritance.java)
 
 	
 ### Polymorphism 

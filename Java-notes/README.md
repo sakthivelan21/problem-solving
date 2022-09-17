@@ -5,46 +5,64 @@
 
 + Basic Hello World 
 
-	+ [Simple Hello World Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/HelloWorld.java)
+	+ [Simple Hello World Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/HelloWorld.java)
 
 
 + Command Line Arguments
 
-	+ [Command Line Arguments Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/CommandLineArguments.java)
+	+ [Command Line Arguments Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/CommandLineArguments.java)
 
-	+ [Command Line Arguments sum Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/CommandLineArgumentsSum.java)
+	+ [Command Line Arguments sum Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/CommandLineArgumentsSum.java)
 
 + Sorting Alogrithms
 
-	+ [Sorting Alogrithms ](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/SortData.java)
+	+ [Sorting Alogrithms ](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/SortingAlgorithms/SortData.java)
+
+
++ Searching Algorithms
+
+	+ [Linear Search](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Searching-Algorithms/LinearSearch.java)
+
+	+ [Binary Search](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Searching-Algorithms/BinarySearch.java)
+
+	+ [Recursive Binary Search](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Searching-Algorithms/RecursiveBinarySearch.java)
 
 + String
 	
-	+ [String Manipulation in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/StringManipulation.java)
+	+ [String Manipulation in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Strings/StringManipulation.java)
 
-	+ [ComapareTo Example in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/CompareToExample.java)
+	+ [ComapareTo Example in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Strings/CompareToExample.java)
 
-+ For Each Loop 
+	+ [String Buffer Example in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Strings/OtherStringClassManipulation.java)
 
-	+ [For Each Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ForEachLoop.java)
 
-+ Two Dimensional Array Problems
++ Arrays
 
-	+ [Transpose of Matrix](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/TransposeOfMatrix.java)
+	+ [For Each with Array Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/ForEachLoop.java)
+
+	+ [Arrays class In Built Methods Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/ArrayMethodsExample.java)
+
+	+ [Transpose of Matrix](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/TransposeOfMatrix.java)
+
+	+ [Matrix Multiplication](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/MatrixMultiplication.java)
+
+	+ [Vector Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/VectorExample.java)
+
+	+ [Dynamic Array Size change]((https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/DynamicArraySizeChange.java))
 
 + Inheritance
 
-	+ [Single Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/SingleInheritance.java)
+	+ [Single Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/SingleInheritance.java)
 
-	+ [Multi-level Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultilevelInheritance.java)
+	+ [Multi-level Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/MultilevelInheritance.java)
 
-	+ [Hierarchical Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/HierarchicalInheritance.java)
+	+ [Hierarchical Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/HierarchicalInheritance.java)
 
-	+ [Multiple Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultipleInheritance.java)
+	+ [Multiple Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Inheritance/MultipleInheritance.java)
 
 + Class 
 
-	+ [To String Override](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ToStringOverride.java)
+	+ [To String Override](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/ToStringOverride.java)
 
 
 ### History of Java
@@ -248,7 +266,7 @@ int[] intArray = new int[20]; // combining both statements in one
 
 * There is no need to write the new int[] part in the latest versions of Java.
 
-[Array Literal Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ForEachLoop.java)
+[Array Literal Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/ForEachLoop.java)
 
 ```
 // Declaring array literal
@@ -258,7 +276,8 @@ int[] intArray = new int[20]; // combining both statements in one
 
 ### Multi-Dimensional Array in java 
 
-
+	* Arrays will have internal arrays in each index;
+	
 ```
 int array[][]= {
 	    {1,1,1,1},
@@ -268,10 +287,72 @@ int array[][]= {
 	};
 ```
 
+### Dynamic Memory Change in Array
+
++ The number of elements(size) of array may change during the execution of the program.
+
++ you can dynamically change the number of elements by dynamically retaining the array name.
+
++ [Dynamic Memory Change Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/DynamicArraySizeChange.java)
+
+### Array Methods in java 
+
++ [Array Methods Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/ArrayMethodsExample.java)
+
 
 ### Strings in Java
 
 * string is basically an object that represents sequence of char values. An array of characters works same as Java string.
 
-* [String Manipulation in java code](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/StringManipulation.java)
- 
+* [String Manipulation in java code](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Strings/StringManipulation.java)
+
+
+### String Storage
+
+* They are three classes to handle string  and they are available in java.lang package.
+
+	* `class String` - stored in `string constant pool and heap`, not mutable, thread safe and fast.
+
+	* `class StringBuffer` - stored in `Heap` , mutable,thread safe and slow
+
+	* `class StringBuilder` - stored in `Heap`, mutable, Not thread safe and fast
+
+* The objects of class String have aspcial storage facility,which is not available to other two classes.
+
+* normally. The memory allocated to java program is divided into two segments 
+
+	* Stack - The program is stored on the stack.
+
+	* Heap - The variables are stored in heap. In heap, there is memory segment called `String constant pool`. 
+
+	* String constant pool has only unique String values. 
+
+	* If you declare another string with same value. The reference will be already in pool . so it will be referred instead of creating a new instant
+
+
+```
+// String defined like this are stored in String constant pool
+String strx = "abcd";
+
+// Strings defined using new operator are stored on heap memory
+
+String strz = new String("abcd")
+```
+
+### Difference between == and equals in String 
+
+* == comparess the references, i.e two references point to the same object 
+
+* equals() method compares the content of two strings 
+
+```
+String str1 = "Delhi";
+String str2 = "Delhi";
+String str3 = new String("Delhi");
+
+str1 == str2  // true ( as both variable be pointing to same reference in the string constant pool)
+
+str2 == str3 // false ( as both variable be pointing to difference references in different location)
+
+str1.equals(str2) // true ( as it will compare the contents of two strings)
+```

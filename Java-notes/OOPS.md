@@ -69,6 +69,25 @@
 
 * It has data members and methods in it.
 
+* In java, class which are declared as `Final class` cannot be extended by other classes
+
+* It has 4 types of classes 
+
+	* Nested Classes 
+	
+	* super class
+	
+	* Derived Class
+	
+	* Final Class
+	
+
+### Local Class
+
+### Anonymous Class
+
+### Cleaning Process 
+
 ### Access Control to Data Variables and Methods : (Access specifiers)
 
 * `public` : 
@@ -122,6 +141,54 @@
     *  Subclass is a class which inherits the other class. 
 
     *  It is also called a derived class, extended class, or child class. 
+
+* Types of Inheritance 
+
+    ![Types of Inheritance image](https://static.javatpoint.com/images/core/typesofinheritance.jpg)
+
+    ![Type of Inheritance image 2](https://static.javatpoint.com/images/core/multiple.jpg)
+
+
+    * Single Inheritance
+
+        * In single inheritance, subclasses inherit the features of one superclass.
+
+        * In the image Abouve, class A serves as a base class for the derived class B.
+
+        + [Single Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/SingleInheritance.java)
+
+    * Hierarchical Inheritance
+
+        *  In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass. 
+        
+        * In the below image, class A serves as a base class for the derived class B, C.
+
+        + [Hierarchical Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/HierarchicalInheritance.java)
+
+    * Multilevel Inheritance
+
+        * When there is a chain of inheritance, it is known as multilevel inheritance.
+        
+        * In the above image, class A serves as a base class for the derived class B, which in turn serves as a base class for the derived class C.
+
+        * In Java, a class cannot directly access the grandparent’s members. That means class C cannot directly access class A members 
+
+        + [Multi-level Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultilevelInheritance.java)
+
+    * Multiple Inheritance 
+
+        * To reduce the complexity and simplify the language, multiple inheritance is not supported in java. 
+
+        * Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. 
+        
+        * If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.
+
+        * Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error.
+
+        * But in java, `interface` supports multiple inheritance.
+
+        + [Multiple Inheritance Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultipleInheritance.java)
+
 	
 ### Polymorphism 
 

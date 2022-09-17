@@ -3,9 +3,49 @@
 
 ### Codes in this repo
 
-+ [Simple Hello World Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/HelloWorld.java)
-+ [Command Line Arguments Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/)
-+ [](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/)
++ Basic Hello World 
+
+	+ [Simple Hello World Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/HelloWorld.java)
+
+
++ Command Line Arguments
+
+	+ [Command Line Arguments Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/CommandLineArguments.java)
+
+	+ [Command Line Arguments sum Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/CommandLineArgumentsSum.java)
+
++ Sorting Alogrithms
+
+	+ [Sorting Alogrithms ](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/SortData.java)
+
++ String
+	
+	+ [String Manipulation in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/StringManipulation.java)
+
+	+ [ComapareTo Example in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/CompareToExample.java)
+
++ For Each Loop 
+
+	+ [For Each Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ForEachLoop.java)
+
++ Two Dimensional Array Problems
+
+	+ [Transpose of Matrix](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/TransposeOfMatrix.java)
+
++ Inheritance
+
+	+ [Single Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/SingleInheritance.java)
+
+	+ [Multi-level Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultilevelInheritance.java)
+
+	+ [Hierarchical Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/HierarchicalInheritance.java)
+
+	+ [Multiple Inheritance](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/inheritance/MultipleInheritance.java)
+
++ Class 
+
+	+ [To String Override](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ToStringOverride.java)
+
 
 ### History of Java
 
@@ -74,9 +114,57 @@
 
 ### type casting  or type conversion 
 
-	* to convert the data from one type to another type in the program 
+* to convert the data from one type to another type in the program 
 
-	* example : double d=6.8;int value=(int)d;
+
+* order of type casting is as follows 
+
+byte -> short -> int,char -> long -> float -> double 
+
+* Conversion from lower order to higher order
+
+```
+public class Main {
+
+	/*
+		** output **
+		18
+	*/
+
+	public static void main(String[] args)
+	{
+		byte a = 8;
+		short b = 10;
+		int c=a+b; // type casting 
+		System.out.println(c);
+	}
+}
+```
+
+* when we trying to caste a value from higher order to lower order we need to specifiy like this
+
+* type variable = (new_type) variable
+
+```
+double d=6.8;
+int value=(int)d; // type casting
+
+// value = 6
+```
+
+### Autoboxing in java 
+
+* Each primitive data type also has a full Java class implementation that can wrap it. For instance, the Integer class can wrap an int.
+
+* There is sometimes a need to convert from the primitive type to its object wrapper (e.g., using them with generics).
+
+* Java can perform this conversion for us automatically, a process called Autoboxing:
+
+```
+Character c = 'c';
+
+Integer i = 1;
+```
 
 ### Static variable
 
@@ -113,3 +201,77 @@ int a,b,c,d;
 a=b=c=10;
 ```
 
+### Call by value and Call by Reference in Java 
+
++ [clear Article link](https://www.geeksforgeeks.org/g-fact-31-java-is-strictly-pass-by-value/)
+
++ Java is Strictly Pass by Value for primitive data types of java 
+
++ But in java, All non-primitives (or objects of any class) are always references.
+
++  So it gets tricky when we pass object references to methods. 
+
++ Java creates a copy of references and pass it to method, but they still point to same memory reference. 
+
++ Mean if set some other reference to object passed inside method, the object from calling method as well its reference will remain unaffected. 
+
++ But if we change the member variables of an object that it is passed, it will be changed 
+
+
+### Arrays in Java 
+
+* An array in Java is a group of like-typed variables referred to by a common name.
+
+* In Java, all arrays are dynamically allocated
+
+* Arrays are stored in consecutive memory locations.
+
+* Since arrays are objects in Java, we can find their length using the object property length.
+
+* The size of an array must be specified by int
+
+```
+int intArray[];   //declaring array
+intArray = new int[10];  //declaring array
+
+// it can be also done in a single line 
+
+int[] intArray = new int[20]; // combining both statements in one
+
+```
+
+### Array Literal
+
+* In a situation where the size of the array and variables of the array are already known, array literals can be used. 
+
+* The length of this array determines the length of the created array.
+
+* There is no need to write the new int[] part in the latest versions of Java.
+
+[Array Literal Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ForEachLoop.java)
+
+```
+// Declaring array literal
+ int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 }; 
+ 
+``` 
+
+### Multi-Dimensional Array in java 
+
+
+```
+int array[][]= {
+	    {1,1,1,1},
+	    {2,2,2,2},
+	    {3,3,3,3},
+	    {4,4,4,4}
+	};
+```
+
+
+### Strings in Java
+
+* string is basically an object that represents sequence of char values. An array of characters works same as Java string.
+
+* [String Manipulation in java code](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/StringManipulation.java)
+ 

@@ -7,6 +7,8 @@
 
 	+ [Simple Hello World Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/HelloWorld.java)
 
+	+ [Assertion Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/AssertionExample.java)
+
 
 + Command Line Arguments
 
@@ -17,6 +19,18 @@
 + Sorting Alogrithms
 
 	+ [Sorting Alogrithms ](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/SortingAlgorithms/SortData.java)
+
+
++ Methods 
+
+	+ [Final Methods](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/FinalMethods.java)
+
+	+ [Method Arguments](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/MethodArguments.java)
+
+	+ [To String Override](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/ToStringOverride.java)
+
+	+ [Arrow Functions](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/ArrowFunctions.java)
+
 
 
 + Searching Algorithms
@@ -34,6 +48,8 @@
 	+ [ComapareTo Example in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Strings/CompareToExample.java)
 
 	+ [String Buffer Example in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Strings/OtherStringClassManipulation.java)
+
+
 
 
 + Arrays
@@ -62,8 +78,30 @@
 
 + Class 
 
-	+ [To String Override](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Basics/ToStringOverride.java)
+	+ [Abstract Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/AbstractClass.java)
 
+	+ [Anonymous Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/AnonymousClass.java)
+
+	+ [Assigning one object to other](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/AssigningOneObjectToOther.java)
+
+	+ [Final class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/FinalClass.java)
+
+	+ [Local class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/LocalClass.java)
+
+	+ [Nested Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/NestedClass.java)
+
+	+ [Private Access Specifier](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/PrivateAccessSpecifier.java)
+
+	+ [Simple Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/SimpleClass.java)
+
+	+ [Singleton Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/SingletonClass.java)
+
+
+### Polymorphism 
+
+	+ [Constructor Overloading](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Polymorphism/ConstructorOverLoading.java)
+
+	+ [Method Overloading](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Polymorphism/MethodOverLoading.java)
 
 ### History of Java
 
@@ -206,6 +244,7 @@ public class Hello{
 ### Final Keyword
 
 * The value of a variable declared `final` cannot be changed in the program.
+
 * It makes the varable as a `constant`
 
 ```
@@ -221,7 +260,7 @@ a=b=c=10;
 
 ### Call by value and Call by Reference in Java 
 
-+ [clear Article link](https://www.geeksforgeeks.org/g-fact-31-java-is-strictly-pass-by-value/)
++ [clear Article link](https://www.geeksforgeeks.org/g-fact-31-java-is-strictly-pass-by-value/).
 
 + Java is Strictly Pass by Value for primitive data types of java 
 
@@ -356,3 +395,65 @@ str2 == str3 // false ( as both variable be pointing to difference references in
 
 str1.equals(str2) // true ( as it will compare the contents of two strings)
 ```
+
+### Interface 
+
+* Interface is a type of class that defines only absract methods 
+
+* An interface is a completely "abstract class" that is used to group related methods with empty bodies.
+
+* To access the interface methods, the interface must be "implemented" (kinda like inherited) by another class with the implements keyword (instead of extends). The body of the interface method is provided by the "implement" class:
+
+* The methods declared in interface are implicitly public a bstract methods.
+
+* The variables in interface must be initialized either compile time error will be thrown.
+
+* They can be top level interface, nested interface and generic interface.
+
+* Interface attributes are by default public, static and final
+
+* we have to define all the methods inside interface else the class will be treated as an abstract class.
+
+* we can use inheritance in interface 
+
+```
+interface A {}
+interface B {}
+
+interface C extends A,B{}
+
+```
+
+### Default methods in interfaces 
+
+* The java SE8 enhancement of interfaces allows the interfaces to have full definitions of `default` and static methods.
+
+* Default methods cannot be declared as final and gives compilation error.
+
+```
+public interface InterfaceA{
+	default void display(){
+		System.out.println("Hello");
+	}
+}
+```
+
+### When to use Interface 
+
+* To achieve security - hide certain details and only show the important details of an object (interface).
+
+*  Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma.
+
+### Exception Handling 
+
+* Exception Handling is a mechanism to `handle runtime errors` such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+
+* Advantage of Exception Handling, 
+
+	* To maintain the normal working flow of application.
+	
+	* The run time errors actually disturbs the flow of execution that's why we need Exception Handling.
+
+
+
+

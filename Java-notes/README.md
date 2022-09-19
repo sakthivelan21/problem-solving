@@ -128,6 +128,17 @@
 
 	* [Example of creating Thread with Thread Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/ThreadMethodsExample.java)
 
+	* [Example of creating Thread with Runnable interface](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/RunnableThreadExample.java)
+
+	* [Synchronization Threads Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/SynchronizationThreadsExample.java)
+
+	* [Multiple Threads](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MultipleThreads.java)
+
+	* [Multiple Threads With Join Method](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MultipleThreadsWithJoin.java)
+
+	
+
+
 
 ### History of Java
 
@@ -646,16 +657,66 @@ throw new ArithmeticException("/ by zero");
 
 * Main Thread can also be controlled through it's refernce and by using `static method Thread.currentThread()`.
 
+* Advantages are Efficient use of processors,performance and Better performance.
+
+* Disadvantages are DeadLock,unexpected results and need an over head to handle maintain threads and scheduling.
+
 * [Main Thread Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MainThreadExample.java)
 
 * Two Ways to Implement Multithreading
 
 	* using  Thread class 
 
-		*[Example of creating Thread with Thread Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/ThreadMethodsExample.java)
+		* [Example of creating Thread with Thread Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/ThreadMethodsExample.java)
 
+		* Highest Thread priority is 10 and minimum priority is 1 and mid priority is 5.
+
+		* Thread with max priority will be executed first.
 	* using  Runnable Interface
 
+		* [Example of creating Thread with Thread Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/RunnableThreadExample.java)
+
+### Life Cycle of Threads 
+
+* A new Object of thread class is created.
+
+* start() method makes thread object alive 
+
+* Thread object executes its run() method
+
+* Thread may undergo sleep() and can come back and resume()
+
+* Thread object dies after run() is over
+
+<p align="center">
+	<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210421114547/lifecycleofthread.jpg" alt="lifecyle of threads"/>
+</p>
+
+### synchroniztation in Threads 
+
+* Synchronization in Java is the capability to control the access of multiple threads to any shared resource.
+
+* Java Synchronization is better option where we want to allow only one thread to access the shared resource.
+
+* The synchronization is mainly used to
+
+   * To prevent thread interference.
+   
+   * To prevent consistency problem.
+
+* [Synchronization code Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/SynchronizationThreadsExample.java)
+
+
+
+### DeadLock in Threads 
+
+### InterThread Communication 
+
+### volatile && Transient example
+
+### java object cloning 
+
+### Java Wrapper Class
 
 ### Collections in Java 
 

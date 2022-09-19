@@ -96,12 +96,38 @@
 
 	+ [Singleton Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Class/SingletonClass.java)
 
++ Generics 
 
-### Polymorphism 
+	* [Generic Class Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Generics/GenericClassExample.java)
+
+	* [Generic Method Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Generics/GenericMethodExample.java)
+
++ Polymorphism 
 
 	+ [Constructor Overloading](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Polymorphism/ConstructorOverLoading.java)
 
 	+ [Method Overloading](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Polymorphism/MethodOverLoading.java)
+
++ Exception Handling 
+
+	* [Simple Try Catch Example ](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/SimpleExceptionExample.java)
+
+	* [Tru Catch Finally Mutliple Exception Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/MultipleException.java)
+
+	+ [User Defined Exception Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/UserDefinedException.java)
+
+	* [Exmple of subclass Exception](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/SubClassException.java)
+
+	+ [Throw Exception](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/ThrowException.java)
+
+	+ [Throws Exception](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/ThrowsException.java)
+
++ Multi-Threading in java 
+
+	* [Main Thread Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MainThreadExample.java)
+
+	* [Example of creating Thread with Thread Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/ThreadMethodsExample.java)
+
 
 ### History of Java
 
@@ -448,12 +474,189 @@ public interface InterfaceA{
 
 * Exception Handling is a mechanism to `handle runtime errors` such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
 
+* An Exception is an undesirable event that may occur during the execution of the program and may lead to termination of the program if it is not handled properly.
+
 * Advantage of Exception Handling, 
 
 	* To maintain the normal working flow of application.
 	
-	* The run time errors actually disturbs the flow of execution that's why we need Exception Handling.
+	* Provision to Complete Program Execution
+
+	* Easy Identification of Program Code and Error-Handling Code
+
+	* Propagation of Errors
+
+	* Meaningful Error Reporting
+	
+	* Identifying Error Types
+
+* [Simple Try Catch Example ](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/SimpleExceptionExample.java)
+
+* All exception and error types are subclasses of `class Throwable`, which is the base class of the hierarchy.
+
+* One branch is headed by `Exception`. This class is used for `exceptional conditions that user programs should catch`.
+
+* Another branch, `Error` is used by the Java run-time system(JVM) to `indicate errors having to do with the run-time environment itself(JRE)`. StackOverflowError is an example of such an error.
+
+<p align="center">
+	<img src="https://media.geeksforgeeks.org/wp-content/uploads/Exception-in-java1.png" alt="Throwable Class Heirarchy"/>
+</p>
+
+### Types of Exception 
+
+<p align="center">
+	<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220120111809/Group21-660x330.jpg" alt="Throwable Class Heirarchy"/>
+</p>
+
+* Built-in Exceptions
+
+	* Built-in exceptions are the exceptions that are available in Java libraries. These exceptions are suitable to explain certain error situations.
+
+	* It is of two types 
+
+		* Checked Exception
+
+			* Checked exceptions are called `compile-time exceptions` because these exceptions are `checked at compile-time` by `the compiler`.
+
+		* Unchecked Exception 
+
+			* The unchecked exceptions are just opposite to the checked exceptions. The compiler will not check these exceptions at compile time. 
+			
+			* In simple words, if a program throws an unchecked exception, and even if we didn’t handle or declare it, the program would not give a compilation error.
+
+* User-Defined Exceptions
+
+	* Sometimes, the built-in exceptions in Java are not able to describe a certain situation. 
+	
+	* In such cases, users can also create exceptions, which are called ‘user-defined Exceptions’. 
+
+	+ [User Defined Exception Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/UserDefinedException.java)
+
+### Try-Catch-Finally Exception 
+
+* At first, the code inside the try block will be executed. If any exception is occured,it is mapped to the correct Catch Block.
+
+* Finally will be executed once try and catch block is executed.
+
+* [Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/MultipleException.java)
+
+```
+try {
+    // block of code to monitor for errors
+    // the code you think can raise an exception
+} catch (ExceptionType1 exOb) {
+    // exception handler for ExceptionType1
+} catch (ExceptionType2 exOb) {
+    // exception handler for ExceptionType2
+}
+// optional
+finally {  // block of code to be executed after try and catch block ends 
+}
+```
+
+### Throwable Class 
+
+* class Throwable is super class to all the error and exeption class. 
+
+### Catching Subclass Exception
+
+* If super class method does not have any exception declaration, and child class overrides the method with an exception will cause an run time exception 
+
+* [Exmple of subclass Exception](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/SubClassException.java)
 
 
+### Throw keyword
+
+* The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
+
+* We can throw either checked or unchecked exception. 
+
+* The throw keyword is mainly used to throw custom exceptions. 
+
+```
+//syntax
+throw Instance
+Example:
+throw new ArithmeticException("/ by zero");
+```
+
++ [Throw Exception](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/ThrowException.java)
+
+### Throws Keyword 
+
++ throws is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions.
+
+* The caller to these methods has to handle the exception using a try-catch block. 
+
++ throws keyword is required only for checked exception and usage of throws keyword for unchecked exception is meaningless.
+
++ throws keyword is required only to convince compiler and usage of throws keyword does not prevent abnormal termination of program.
+
++ By the help of throws keyword we can provide information to the caller of the method about the exception.
+
++ [Throws Exception](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ExceptionHandling/ThrowsException.java)
+
+### Generics
+
+* Generics `means parameterized types`.
+
++ The idea is to allow type (Integer, String, … etc., and user-defined types) to be a parameter to methods, classes, and interfaces.
+
++  Using Generics, it is possible to create classes that work with different data types
+
++ The `Object` is the `superclass of all other classes`, and Object reference can refer to any object.
+
++ These features lack type safety. Generics `adds that type safety` feature.
+
++ The compiler takes care of the type of safety which enables programmers to code easily since they do not have to perform long, individual type castings.
+
++ The `Type naming conventions`  in java Generics
+
+	+  The common type parameters are as follows:
+
+		+ T – Type
+		+ E – Element
+		+ K – Key
+		+ N – Number
+		+ V – Value
+
++ Advantage of using generics is that `code reusability` and `Type safety`.
+
++ Type of Generics in java 
+
+	+ Generic Methods 
+		
+		* Generic Java method takes a parameter and returns some value after performing a task. It is exactly like a normal function, however, a generic method has type parameters that are cited by actual type. 
+
+		* [Generic Method Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Generics/GenericMethodExample.java)
+
+	+ Generic Class 
+		
+		* A generic class is implemented exactly like a non-generic class. The only difference is that it contains a type parameter section. There can be more than one type of parameter, separated by a comma.
+
+		* [Generic Class Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Generics/GenericClassExample.java)
+
+### Multi Threading in java 
+
+* Multi Threading is inbuilt in java and CPU capacity utilization may be improved by having multiple thread that concurrently execute different parts of the program.
+
+* Multithreading is a `Thread-based multitasking` is a `lightweight process` and occupies the same address space. Hence, while switching cost of communication will be very less.
+
+* when we run a proram in java , `one thread` is automatically created and it executes the main method. This thread is called `Main Thread`.
+
+* Main Thread can also be controlled through it's refernce and by using `static method Thread.currentThread()`.
+
+* [Main Thread Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MainThreadExample.java)
+
+* Two Ways to Implement Multithreading
+
+	* using  Thread class 
+
+		*[Example of creating Thread with Thread Class](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/ThreadMethodsExample.java)
+
+	* using  Runnable Interface
 
 
+### Collections in Java 
+
+### Packages in java 

@@ -136,6 +136,18 @@
 
 	* [Multiple Threads With Join Method](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MultipleThreadsWithJoin.java)
 
+	* [Example Volatile Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/TransientExample.java)
+
+	* [Example of Inter Thread communication in Threads](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/InterThreadCommunication.java)
+
+	* [Example of DeadLock in Threads](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/DeadLockInThreads.java)
+
+	* [Example of Interrupting Thread Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/InterruptingThreadExample.java)
+
+	* [Transient Keyword Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/TransientExample.java)
+
+
+
 	
 
 
@@ -205,6 +217,41 @@
 
     * these ar the class and interfaces types that are defined by the user.
 
+### Java Wrapper Class
+
+* Wrapper classes are classes that wraps primitive data types.
+
+* They are very helpful in creating Collections as per our need where object is required.
+
+
+| Primitive Data type      | Wrapper Class |
+| -----------------------  | --------------|
+| char                     | Character     |
+| byte                	   | Byte          |
+| short 				   | Short		   |
+| int                      | Integer       |
+| long                     | Long          |
+| float                    | Float         | 
+| double                   | Double        |
+| boolean                  | Boolean       |
+
+
+```
+int i = 10;
+
+// Boxing,wrapping
+Integer i2 = Integer.valueOf(15);
+
+// this is also boxing where compiler will convert this 12 to Integer.valueOf(12);
+// Autoboxing
+Integer i3 = 12;
+
+// unboxing, unwrapping
+int j = i2.intValue();
+
+int k = i3; // auto unboxing 
+```
+
 ### type casting  or type conversion 
 
 * to convert the data from one type to another type in the program 
@@ -243,6 +290,15 @@ double d=6.8;
 int value=(int)d; // type casting
 
 // value = 6
+```
+
+### Type conversion in java with wrapper classes
+
+* To convert from one data type to another
+
+```
+String num = "123";
+int a = Integer.parseInt(num);
 ```
 
 ### Autoboxing in java 
@@ -710,13 +766,105 @@ throw new ArithmeticException("/ by zero");
 
 ### DeadLock in Threads 
 
+* synchronized keyword is used to make the class or method thread-safe which means only one thread can have lock of synchronized method and use it, other threads have to wait till the lock releases and anyone of them acquire that lock. 
+
+* This may cause one thread to wait for the other thread release the use of resources 
+
+* But some times both thread will be needing two resources, but both thread will be holding one resources making both the threads to wait. This is called `DeadLock`.
+
+* It occurs dues to improper `synchronized threads` having a shared target data source.
+
+* Deadlock condition is a complex condition which occurs only in case of multiple threads.
+
+* Deadlock condition can break our code at run time and can destroy business logic.
+
+
+<p align="center">
+	<img src="https://media.geeksforgeeks.org/wp-content/uploads/22-2.png" alt="DeadLock Example">
+</p>
+
+### ways to avoid dead lock 
+
+* Avoid nested locks 
+
+* Avoid Unnecessary Locks 
+
+* Handle  Thread join Correctly - Thread.join with maximum time you think the execution will take.
+
+* [Example of DeadLock in Threads](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/DeadLockInThreads.java)
+
+
+### yield() method in threads
+
+* The yield() basically means that the thread is not doing anything particularly important and if any other threads or processes need to be run, they should run. Otherwise, the current thread will continue to run.
+
+* if one thread is going to run for 5 hours and other thread will complete in 5 minutes. we can make the minimal thread to run first and the long thread next.
+
+<p align="center">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/50-1.png" alt="yield example">
+</p>
+
 ### InterThread Communication 
 
-### volatile && Transient example
+* Inter-thread communication or Co-operation is all about allowing synchronized threads to communicate with each other.
+
+* [Example of Inter Thread communication in Threads](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/InterThreadCommunication.java)
+
+* Cooperation (Inter-thread communication) is a mechanism in which a thread is paused running in its critical section and another thread is allowed to enter (or lock) in the same critical section to be executed.It is implemented by following methods of Object class:
+
+	* wait()
+
+		* The wait() method causes current thread to release the lock and wait until either another thread invokes the notify() method or the notifyAll() method for this object, or a specified amount of time has elapsed.
+
+		* It must be called from synchronized method
+	
+	* notify()
+
+		* The notify() method wakes up a single thread that is waiting on this object's monitor. If any threads are waiting on this object, one of them is chosen to be awakened. The choice is arbitrary and occurs at the discretion of the implementation.
+
+	* notifyAll()
+
+		* Wakes up all threads that are waiting on this object's monitor
+
+<p align="center">
+	<img src="https://media.geeksforgeeks.org/wp-content/uploads/20211216134207/imagereedit3.jpg" alt="DeadLock Example">
+</p>
+
+
+### volatile keyword 
+
+* The value of the variable that is declared volatile may be changed by other parts of the program.
+
+* Normally threaed create copies of the initial values of varaibles in a cache memory  and process the values and stores the value in cache,which is not visible to other threads.
+
+*  volatile keyword gives solution to this problem by intimating the JVM that all read and write processes on tha variable be shared with all other threads as a common variable.
+
+* It is also used to make classes thread safe. 
+
+* It means that multiple threads can use a method and instance of the classes at the same time without any problem.
+
+* [Example Volatile Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/VolatileExample.java)
+
+### Transient keyword 
+
+* In Java, Serialization is used to convert an object into a stream of the byte. 
+
+* The byte stream consists of the data of the instance as well as the type of data stored in that instance. 
+
+* Deserialization performs exactly opposite operation. It converts the byte sequence into original object data. 
+
+* `During the serialization`, when `we do not want an object to be serialized` we can use a `transient keyword`.
+
+* transient can be used in data members of the class in order to avoid serialization.
+
+* Example: if our object store username and password, they don't have to be serialized inorder to ensure integrity. so we use transient here , jvm will replace these values of member variables with default value of object.
+
+* [Example Volatile Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/TransientExample.java)
 
 ### java object cloning 
 
-### Java Wrapper Class
+	* 
+
 
 ### Collections in Java 
 

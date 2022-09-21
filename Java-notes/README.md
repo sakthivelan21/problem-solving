@@ -136,7 +136,7 @@
 
 	* [Multiple Threads With Join Method](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/MultipleThreadsWithJoin.java)
 
-	* [Example Volatile Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/TransientExample.java)
+	* [Example Volatile Program](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/VolatileExample.java)
 
 	* [Example of Inter Thread communication in Threads](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/InterThreadCommunication.java)
 
@@ -146,10 +146,18 @@
 
 	* [Transient Keyword Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/TransientExample.java)
 
++ Object Cloning 
 
+	* [Shallow copy Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ObjectCloning/ShallowCopyExample.java)
+
+
+	* [deep copy Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/DeepCopyExample.java)
 
 	
++ packages
 
+
+* [Package Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Packages/myPackage)
 
 
 ### History of Java
@@ -863,9 +871,79 @@ throw new ArithmeticException("/ by zero");
 
 ### java object cloning 
 
-	* 
+* The object cloning is a way to create exact copy of an object. The clone() method of Object class is used to clone an object.
+
+*  It creates a new instance of the class of the current object and initializes all its fields with exactly the contents of the corresponding fields of this object.
+
+* shallow copy 
+
+	* Shallow copy is the method of copying an object and is followed by default in cloning.
+
+	* In this method, the fields of an old object X are copied to the new object Y.
+
+	* Therefore, any changes made in referenced objects in object X or Y will be reflected in other objects.
+
+	* [Shallow copy Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/ObjectCloning/ShallowCopyExample.java)
+
+* deep copy 
+
+	* If we want to create a deep copy of object X and place it in a new object Y then a new copy of any referenced objects fields are created and these references are placed in object Y.
+
+	* This means any changes made in referenced object fields in object X or Y will be reflected only in that object and not in the other.
+
+	* [deep copy Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/MultiThreading/DeepCopyExample.java)
+
+
+
+### Packages in java 
+
+* Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces. 
+
+* packages are used for 
+
+	* preventing naming conflicts.
+
+	* making searching/locating and easy access of classes, interfaces etc.
+
+	* providing controlled access through access specifier 
+
+	* protected and default have package level access control.
+
+	* Packages can be considered as data encapsulation (or data-hiding).
+
+* packages are of two types 
+
+	* user defined packages
+
+	* Built in packages 
+
+* Every class is part of some package.
+
+* If no package is specified, the classes in the file goes into a special unnamed package (the same unnamed package for all files).
+
+* [Package Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Packages/myPackage)
+
+```
+// package
+myPackage 
+	// class containing main function
+	- Main.java 
+	// sub-package
+	- Shapes 
+
+		- Square.java 
+
+		- Rectangle.java 
+
+// To perform compilation on myPackage Main.java 
+// from parent directory of myPackage
+$ javac myPackage/Main.java 
+
+$ java myPackage/Main 
+```
 
 
 ### Collections in Java 
 
-### Packages in java 
+
+

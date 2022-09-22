@@ -62,7 +62,7 @@
 
 	+ [Matrix Multiplication](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/MatrixMultiplication.java)
 
-	+ [Vector Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/VectorExample.java)
+	
 
 	+ [Dynamic Array Size change]((https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/DynamicArraySizeChange.java))
 
@@ -157,8 +157,50 @@
 + packages
 
 
-* [Package Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Packages/myPackage)
+	* [Package Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Packages/myPackage)
 
++ Collections 
+
+	+ ArrayList 
+
+		* [Array List Methods Example 1](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/List/ListExample.java)
+
+		* [Array List Example 2](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/List/ArrayListExample.java)
+	
+	+ Iterator 
+
+		* [Iterator](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Iterators/IteratorExample.java)
+
+		* [ListIterator](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Iterators/ListIteratorExample.java)
+
+	+ Vector
+
+		+ [Vector Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Arrays/VectorExample.java)
+
+	+ Stack
+
+		*  [Stack Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Stack/StackExample.java)
+
+	+ Queue 
+
+		* [Queue Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Queue/QueueExample.java)
+
+
+	+ Priority Queue 
+
+		* [Priority Queue Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Queue/PriorityQueueExample.java)
+
+	+ Map
+
+		* [HashMap Example](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Map/HashMapExample.java)
+
+	+ Hash Table
+
+		* [Hash Table](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Map/HashTableExample.java)
+
+	* Set 
+
+		* [Hash Set](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Set/HashSetExample.java)
 
 ### History of Java
 
@@ -945,5 +987,115 @@ $ java myPackage/Main
 
 ### Collections in Java 
 
+* The collection framwork has been designed to store reference types and not primitive types.
+
+* The purpose of Collection Framewordk
+
+	* Uniformity of treatments for collections of different types.
+
+	* High performance, increases program speed and quality as the implementation of this collection is targetted to best implementation measures.
+
+	* Ease of application in real-world problems
+
+### Hierarchy of the Collection Framework
+
+<p align="center">
+	<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220526152255/Collections-in-Java1.png" alt="Hierarchy of colllection framework">
+</p>
 
 
+| Interface     | Implementation by Classes |
+| --------------| --------------------------|
+| Set           | HashSet, LinkedHashSet, EnumSet     |
+| SortedSet     | TreeSet          |
+| List          | Vector, Stack, ArrayList, LinkedList		   |
+| Queue         | PriorityQueue, LinkedList       |
+| Map           | HashMap, Hashtable, LinkedHashMap, IdentityHashMap,WeakHashMap          |
+| SortedMap     | TreeMap         | 
+
+### Code Samples for Collections 
+
+### Iterator 
+
+* Iterators are used to access the elements of aa colleciton one at a time.
+
+* Almost all collections suppport iterators except the maps thar are not considered as collections.
+
+* [Iterator](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Iterators/IteratorExample.java)
+
+	* It can traverse the list only in forward direction
+
+* [ListIterator](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/Iterators/ListIteratorExample.java)
+
+	* It can traverse the list in both directirons
+
+### List - interface
+
+* The List interface in Java provides a way to store the ordered collection. 
+
+* It is a child interface of Collection.
+
+* Since List is an interface, objects cannot be created of the type list.
+
+* We always need a class that implements this List in order to create an object.
+
+```
+	List<Obj> list = new ArrayList<Obj> (); 
+```
+
+*  List is an `interface`, implemented by the `ArrayList class`, pre-defined in the java.util package. 
+
+### ArrayList 
+
+* The ArrayList class is a resizable array, which can be found in the java.util package.
+
+* The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one).
+
+*  While elements can be added and removed from an ArrayList whenever you want.
+
+* ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases.
+
+* [Array List Methods Example 1](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/List/ListExample.java)
+
+* [Array List Example 2](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Collections/List/ArrayListExample.java)
+
+### Priority Queue 
+
+* A PriorityQueue is used when the objects are supposed to be processed based on the priority.
+
+* It is known that a Queue follows the First-In-First-Out algorithm, but sometimes the elements of the queue are needed to be processed according to the priority, that’s when the PriorityQueue comes into play.
+
+* In the below priority queue, an element with a maximum ASCII value will have the highest priority.
+
+### Map 
+
+* Maps are perfect to use for key-value association mapping such as dictionaries. 
+
+* The maps are used to perform lookups by keys or when someone wants to retrieve and update elements by keys
+
+* A Map cannot contain duplicate keys and each key can map to at most one value. 
+
+* Some implementations allow null key and null values like the HashMap and LinkedHashMap, but some do not like the TreeMap.
+
+### Hash Table 
+
+* The Hashtable class implements a hash table, which maps keys to values. 
+
+* Any non-null object can be used as a key or as a value. 
+
+* To successfully store and retrieve objects from a hashtable, the objects used as keys must implement the hashCode method and the equals method.  
+
+
+### Difference between hashmap and hashtable 
+
+* HashMap is non-synchronized. It is not thread-safe and can’t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+
+* HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value.
+
+* HashMap is generally preferred over HashTable if thread synchronization is not needed.
+
+*  In order to successfully store and retrieve objects from a HashTable, the objects used as keys must implement the hashCode method and the equals method. 
+
+* Since null is not an object, it can’t implement these methods. HashMap is an advanced version and improvement on the Hashtable. HashMap was created later. 
+
+* unconvered - LinkedList , deque, LinkedHashSet,TreeSet,EnumSet,TreeMap,LinkedHashMap

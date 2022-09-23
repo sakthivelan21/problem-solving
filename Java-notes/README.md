@@ -1,6 +1,10 @@
 # Java Notes 
     This repo contains source code of java concepts and oops.
 
+
+### Problem solving in java 
+
++ [Coding Problems in java](https://github.com/sakthivelan21/problem-solving/blob/main/coding-problems/problems-in-java)
 ### Codes in this repo
 
 + Basic Hello World 

@@ -1,5 +1,33 @@
 # Coding Problems 
 
+
+### problem-solving-java 
+
+* [Write a program to compare two strings with and without ignoring case](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/CompareTwoStrings.java)
+
+* [Write a program to find the number of occurences of substring in a string](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/)
+
+
++ [Write a program to eliminate numeric values in java ](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/RemoveNumericValues.java)
+
++ [To write a program to remove sub string from string ](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/RemoveSubString.java)
+
++ [Write a program to replace a character with a given character in a string ](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/ReplaceCharacterInString.java)
+
++ [To write a program to replace sub string from string ](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/ReplaceSubString.java)
+
++ [A program to split a string with two or more delimiters](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/SplitStringDelimiters.java)
+
++ [Write a program to concatenate two strings ](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/StringConcatenation.java)
+
++ [A program to tokenize a string in java](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/StringTokenizerExample.java)
+
++ [Write a program to find the number of occurences of substring in a string](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/SubStringOccurenceCount.java)
+
+
+
+### problem-solving
+
 + left-shift-array problem in c  
 + minimum adjacent pair sum in c  
 + four digit integers count in python  

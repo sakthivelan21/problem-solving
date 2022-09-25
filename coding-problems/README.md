@@ -24,6 +24,13 @@
 
 + [Write a program to find the number of occurences of substring in a string](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/SubStringOccurenceCount.java)
 
++ [To Write a program to find the sum of two number string without built in methods](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/AddingNumberStrings.java)
+
++ [To find the minimum no of operation to convert String A to String B](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/MinimumOperationToConvert.java)
+
++ [To find the Numbers in which the digits are strictly decreasing](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/NumbersStrictlyDecreasing.java)
+
++ [Count of subsets with sum equal to X](https://github.com/sakthivelan21/problem-solving/tree/main/coding-problems/problems-in-java/SubsetSumCount.java)
 
 
 ### problem-solving

@@ -5,6 +5,9 @@
 ### Problem solving in java 
 
 + [Coding Problems in java](https://github.com/sakthivelan21/problem-solving/blob/main/coding-problems/problems-in-java)
+
++ [Console Based Projects in java](https://github.com/sakthivelan21/problem-solving/blob/main/coding-problems/Java-notes/Console-based-projects)
+
 ### Codes in this repo
 
 + Basic Hello World 

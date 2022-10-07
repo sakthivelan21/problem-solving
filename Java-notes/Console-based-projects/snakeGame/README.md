@@ -20,7 +20,7 @@ Initializing the board ...
 Do you want to continue the game? Y or N :> y
 Displaying the Game Board
 --------
--H000T0-
+-H0000T-
 --------
 --------
 --------

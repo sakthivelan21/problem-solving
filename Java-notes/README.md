@@ -1,5 +1,6 @@
 # Java Notes 
-    This repo contains source code of java concepts and oops.
+
+## This repo contains source code of java concepts and oops.
 
 
 ### Problem solving in java 
@@ -594,6 +595,13 @@ public interface InterfaceA{
 
 *  Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma.
 
+
+### Arrow Functions 
+
+* Arrow Functions or lambda expressions can be used to implement the only abstract function and therefore implement functional interfaces.
+
+
+
 ### Exception Handling 
 
 * Exception Handling is a mechanism to `handle runtime errors` such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
@@ -766,9 +774,9 @@ throw new ArithmeticException("/ by zero");
 
 * Multithreading is a `Thread-based multitasking` is a `lightweight process` and occupies the same address space. Hence, while switching cost of communication will be very less.
 
-* when we run a proram in java , `one thread` is automatically created and it executes the main method. This thread is called `Main Thread`.
+* when we run a program in java , `one thread` is automatically created and it executes the main method. This thread is called `Main Thread`.
 
-* Main Thread can also be controlled through it's refernce and by using `static method Thread.currentThread()`.
+* Main Thread can also be controlled through it's reference and by using `static method Thread.currentThread()`.
 
 * Advantages are Efficient use of processors,performance and Better performance.
 

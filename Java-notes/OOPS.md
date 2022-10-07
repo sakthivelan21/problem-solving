@@ -161,7 +161,7 @@ and example is [Constructor Overloading](https://github.com/sakthivelan21/proble
 
 + JVM will have to to distinguish between the live objects from the garbage objects. 
 
-    + `Reference Couting`
+    + `Reference Counting`
 
         + Initially when an object is created it will have reference count as one.
 

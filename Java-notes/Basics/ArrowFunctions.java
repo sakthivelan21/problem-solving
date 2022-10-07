@@ -1,4 +1,6 @@
+// functional interface
 interface Display{
+    // An abstract function
     void display();
     
 }

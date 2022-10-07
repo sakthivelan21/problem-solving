@@ -4,5 +4,5 @@
 
 ### Console Based Projects in this repo 
 
-+ [Snake Game - Console Based application in java](https://github.com/sakthivelan21/problem-solving/blob/main/coding-problems/Java-notes/Console-based-projects/snakeGame)
++ [Snake Game - Console Based application in java](https://github.com/sakthivelan21/problem-solving/blob/main/Java-notes/Console-based-projects/snakeGame)
 

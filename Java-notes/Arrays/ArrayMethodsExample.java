@@ -168,6 +168,10 @@ public class ArrayMethodsExample{
         // Arrays.deepToString to convert multi-dimensional array into string
         Integer[][] twoDimensionArray = {{1,2},{3,4}};
 
+        // to sort a two dimensional array based on starting value
+
+        Arrays.sort(twoDimensionArray, (a, b) -> Integer.compare(a[0], b[0]));
+
         System.out.println("Multimensional Array to String is "+Arrays.deepToString(twoDimensionArray));
 
     }

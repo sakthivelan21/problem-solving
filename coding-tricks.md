@@ -208,3 +208,14 @@ some Tricks i learned from others
 			return 0;
 		}
 ```
+
+## Reverse a number both negative and positive
+
+```
+	long num=0;
+	while(x!=0)
+	{
+		num=num*10+x%10;
+		x=x/10;
+	}
+```

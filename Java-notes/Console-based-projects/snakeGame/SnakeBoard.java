@@ -7,7 +7,7 @@ public class SnakeBoard{
     private char[][] board;
 
     private Point[] snakeMovements;
-
+    
     private int boardSize;
 
     Scanner scanner = new Scanner(System.in);
@@ -52,12 +52,12 @@ public class SnakeBoard{
         // intializing the snake into the board
         this.board[1][1]='H';
         this.snakeMovements[0] = new Point(1,1);
-        for(int j=2;j<this.boardSize-1;j++)
+        for(int j=2;j<this.boardSize-2;j++)
         {
             this.board[1][j]='0';
             this.snakeMovements[j-1] = new Point(1,j);
         }
-        this.board[1][this.boardSize-3]='T';
+        this.board[1][this.snakeMovements.length]='T';
         this.snakeMovements[this.boardSize-3] = new Point(1,this.boardSize-2);
     }
 

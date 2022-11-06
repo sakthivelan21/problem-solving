@@ -412,7 +412,7 @@ Adding 1 to 1’s complement = 1100 +1
 + The case value must be an integer or character constant.
 + The case value can be used only inside the switch statement.
 
-```
+```c
 #include<stdio.h>  
 int main()  
 {  
@@ -430,4 +430,95 @@ int main()
 return 0;  
 }  
 ```
+
+### pointers 
+
+* A pointer is a variable that contains the memory location of another variable.
+
+* The data type of the pointer variable and the variable to which it points must be the same.
+
+* A pointer can store only the address of the variable.
+
+* `%p` is used to print the memory address in hexadecimal form and `%u` prints memory address in decimal form .
+
+```c
+int num,*pnum; 
+
+int* temp = 10; // it is not allowed
+
+// best approach 
+
+// assigning the pointer to reference the variable num 
+pnum = &num;
+
+// we can assign the value through a pointer only after referencing
+*pnum = 10;
+```
 		
+* Generic pointers can also be used with void keyword 
+
+```c
+int x =10;
+void *gp = &x;
+// but it needs type casting will accessing 
+
+int val = *(int*)gp;
+```
+
+### Function Pointers 
+
+* Function pointers are pointer variables that will point to the address of a function.
+
+* Unlike normal pointers, a function pointer points to code, not data. Typically a function pointer stores the start of executable code.
+
+* Unlike normal pointers, we do not allocate de-allocate memory using function pointers.
+
+* A function’s name can also be used to get functions’ address. For example, in the below program, we have removed address operator ‘&’ in assignment. We have also changed function call by removing *, the program still works.
+
+```c
+#include <stdio.h>
+void print(int n);
+
+// neeed to make sure to wrap within brackets to avoid confusion with return types
+void (*fp) (int);
+
+void main(){
+	// assigning the pointer to reference the method print
+	fp = print;
+	(*fp)(10);
+
+	fp(20);
+}
+
+void print(int value)
+{
+	printf("%d ",value);
+}
+
+
+```
+
+### Memory Allocation 
+
+* In computer , RAM is splitted into stack,heap and global memory 
+
+* `stack` 
+	* a fixed size of memory called system stack , which is faster but smaller. 
+	
+	* When a program begines execution with the main() function , all variables declared within main(), are allocated space on the stack.
+
+	* All the parameters passed to a called function are stored on the stack.
+
+* `Heap`
+
+	* Dynamic memory allocation takes place at the heap.
+
+	* When program has finished using the block, it returns the memory back to the heap.
+
+	* The size of the heap is not constant as it keeps changing when the program is executed.
+
+* `Global Memory`
+
+	* Global variables and main() program will be declared in the global memory area.
+
+	* The memory in the global area is allocated randomly to store the code of different functions in the program in such a way that one function is not continuous to another function.

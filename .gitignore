@@ -1,0 +1,84 @@
+# Ignore Visual Studio Code settings
+.vscode/
+*.code-workspace
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Python artifacts
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore C compiled files
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore backup and temporary files
+*.bak
+*.tmp
+*.swp
+
+# Ignore dependency directories
+node_modules/
+jspm_packages/
+
+# Ignore coverage files
+coverage/
+*.cover
+*.coveragerc
+.coverage.*
+
+# Ignore test and lint results
+junit-*.xml
+nunit-*.xml
+coverage.xml
+
+# Ignore IDE settings and project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore miscellaneous files
+Thumbs.db
+Desktop.ini
+
+# Ignore Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+
+# Ignore virtual environments
+.venv/
+.venv.bak/
+
+# Ignore bytecode and compiled files
+__pycache__/
+*.py[cod]
+*$py.class

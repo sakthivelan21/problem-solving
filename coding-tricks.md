@@ -219,3 +219,24 @@ some Tricks i learned from others
 		x=x/10;
 	}
 ```
+
+### Best Approach to use a character array is with memset
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char myArray[20]; // Create a char array of size 10
+
+    memset(myArray, '\0', sizeof(myArray)); // Set the array to null values
+
+    // Print the contents of the array (ASCII values)
+    for (int i = 0; i < sizeof(myArray); i++) {
+        printf("myArray[%d] = %d\n", i, myArray[i]);
+    }
+
+    return 0;
+}
+
+```

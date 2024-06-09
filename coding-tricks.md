@@ -238,5 +238,28 @@ int main() {
 
     return 0;
 }
+```
 
+### Best way to find the set-bit 
+
+
+```C
+#include <stdio.h>
+
+int main()
+{
+    int val = 10;
+    printf("val at 1 %d\n",val & (1<<0));
+    printf("val at 2 %d\n",val & (1<<1));
+    printf("val at 4 %d\n",val & (1<<2));
+    printf("val at 8 %d\n",val & (1<<3));
+    return 0;
+}
+
+/*
+val at 1 0
+val at 2 2 , set bit
+val at 4 0
+val at 8 8 , set bit 
+*/
 ```

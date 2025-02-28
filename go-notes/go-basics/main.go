@@ -251,6 +251,167 @@ func struct_methods(){
 
 	fmt.Printf("Area of rectangle %v %v\n",rectangle,rectangle.Area())
 }
+
+// interfaces in go
+
+/*
+	interfaces are different from other languages in go 
+
+	in java , interfaces is like a trace template of functions that are declared and implemented in a class 
+
+	we have to call implement to tell the compiler that we have imported them, 
+
+	but in go , it's different. 
+
+	Interfaces are collections of method signatures. A type "implements" an interface if it has all of the methods of the given interface defined on it.
+*/
+
+// Define the func_interface interface
+type func_interface interface {
+    Area2() int
+	print(name string,age int)
+}
+
+// Define the Square struct
+type Square struct {
+    side int
+}
+
+// Implement the Area2 method for Square
+func (s Square) Area2() int {
+    return s.side * s.side
+}
+
+func (s Square) print(name string,age int){
+	fmt.Printf("name %v age %v side %v\n",name,age,s.side)
+}
+
+
+func interfaces_examples(){
+	square := Square{10}
+
+	fmt.Printf("Area of square %v\n",square.Area2())
+
+	square.print("Sakthi",21)
+}
+// type casting to interface
+func printNumericValue(num interface{}) {
+	switch v := num.(type) { // switch with interface
+	case int:
+		fmt.Printf("%T\n", v)
+	case string:
+		fmt.Printf("%T\n", v)
+	default:
+		fmt.Printf("%T\n", v)
+	}
+}
+
+func switch_examples(){
+	fmt.Printf("=====switch_examples====\n")
+
+	// switch cases
+	// switch cases are different from other languages
+	// in go,
+
+	a:= 10
+	b:= "sakthi"
+
+	printNumericValue(a)
+	printNumericValue(b)
+}
+
+type CustomError struct {
+	error_name string
+}
+
+func (e CustomError) Error() string {
+	
+	return "Custom Error: " + e.error_name
+}
+
+func validate(s string) (string,error){
+	if s=="red" {
+		return "valid color :" + s,nil
+	}
+	return "",CustomError{"invalid color: "+s}
+}
+
+func custom_errors_examples(){
+	fmt.Printf("=====custom_errors_examples====\n")
+
+	s:="blue"
+
+	response,err := validate(s)
+
+	if(err!=nil) {
+		fmt.Printf("%v\n",err)
+		return
+	}
+
+	fmt.Printf("%s\n",response)
+}
+
+
+func loops_examples(){
+	fmt.Printf("=====loops_examples====\n")
+
+	// for loop
+	// for loop is the only loop in go
+	// for loop is used to iterate over a collection of items
+
+	// for loop with range
+	// range is used to iterate over a collection of items
+	// range returns two values, index and value
+	// range is used to iterate over arrays, slices, maps, strings, and channels
+
+	// array
+	arr := [3]int{1, 2, 3}
+
+	for i := 0; i < len(arr); i++ {
+		fmt.Printf("loops: index %v value %v\n", i, arr[i])
+	}
+
+	index:=0
+
+
+	// while loop in go
+	for index < len(arr) {
+
+		fmt.Print("while loop: index ",index," value ",arr[index],"\n")
+
+		index++
+	}
+
+
+	for i, v := range arr {
+		fmt.Printf("loop: index %v value %v\n", i, v)
+	}
+
+	for i,v := range arr {
+
+		if(i%2==0) {
+			continue
+		}
+
+		fmt.Printf("loop: index %v value %v\n", i, v)
+	}
+
+	// break statement
+
+	for i,v := range arr {
+
+		if(i==2) {
+			break
+		}
+
+		fmt.Printf("loop: index %v value %v\n", i, v)
+	}
+
+	
+}
+
+
+
 func main() {
 
 	// 1. print functions
@@ -282,6 +443,25 @@ func main() {
 		struct_methods()
 
 	// 9. interfaces in go 
+
+	    interfaces_examples()
+
+	// 10. switch cases in go 
+
+		switch_examples()
+
+	// 11. error handling in go 
+
+		//Go programs express errors with `error` values. An Error is any type that implements the simple built-in  error interface
+		
+		// When something can go wrong in a function, that function should return an error as its last return value. Any code that calls a function that can return an error should handle errors by testing whether the error is nil.
+
+		// A nil error denotes success; a non-nil error denotes failure.
+		custom_errors_examples()
+
+	//  12 . loops in go 
+
+		loops_examples()
 
 
 }

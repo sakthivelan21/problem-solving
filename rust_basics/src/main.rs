@@ -1,6 +1,13 @@
 use std::{collections::HashMap, io};
 
+use log::{info, warn, error};
+
+
 pub mod examples;
+
+pub mod logging;
+
+
 
 fn fetch_user_input() {
     let mut name = String::new();
@@ -507,7 +514,7 @@ fn rust_collections(){
 
     let last  = v.pop();
 
-    match(last){
+    match last{
         Some(val) => println!("The value of last is: {}", val),
         None => println!("The vector is empty"),
     }
@@ -592,6 +599,23 @@ fn rust_error_handling(){
     println!("The value of f is: {:#?}", f);
 }
 
+fn rust_fern_logs(){
+    logging::setup_logger().expect("Failed to initialize logger");
+    let x = 10;
+    info!("This is an info message.{}",x);
+    warn!("This is a warning.");
+    error!("This is an error.");
+}
+
+fn rust_tracing_logs(){
+    logging::init_logging();
+    println!("rust tracing logs");
+    tracing::info!("Logging system initialized");
+    tracing::info!("Application started");
+
+    tracing::error!("This is an error message");
+}
+
 fn main() {
     println!("Rust Examples Start");
 
@@ -631,6 +655,11 @@ fn main() {
 
     // rust_hashmap();
 
-    rust_error_handling();
+    // rust_error_handling();
+
+
+    // rust_fern_logs();
+
+    rust_tracing_logs();
 
 }

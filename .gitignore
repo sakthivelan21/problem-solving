@@ -29,7 +29,6 @@ venv.bak/
 .DS_Store
 
 # Ignore logs and databases
-*.log
 *.sql
 *.sqlite
 

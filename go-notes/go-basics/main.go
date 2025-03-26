@@ -463,5 +463,9 @@ func main() {
 
 		loops_examples()
 
+	// 13. arrays in go 
+
+		
+
 
 }

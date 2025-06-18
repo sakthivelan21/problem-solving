@@ -354,7 +354,7 @@ fn rust_slices(){
     // it prevents accesing a value after freed - heap use after free 
 
     println!("The value of hello is: {hello}"); // hello reference has gone out of scope 
-
+    
     s.clear();
 
 
@@ -645,7 +645,7 @@ fn main() {
 
     // struct_methods();
 
-    // rust_enums();
+    rust_enums();
 
 //    rust_crate_examples();
 
@@ -660,6 +660,6 @@ fn main() {
 
     // rust_fern_logs();
 
-    rust_tracing_logs();
+    // rust_tracing_logs();
 
 }

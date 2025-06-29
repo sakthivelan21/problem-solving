@@ -44,3 +44,31 @@
 3. [Leetcode 141 - Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
     * solve by using the two-pointer technique (Floyd's cycle-finding algorithm) to detect if there is a cycle in the linked list.
+
+4. [Leetcode 143 - Reorder List](https://leetcode.com/problems/reorder-list/)
+
+    * solve by finding the middle of the linked list, reversing the second half, and then merging the two halves.
+
+5. [Leetcode 2 - Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+
+    * solve by iterating through both linked lists and adding the corresponding digits, taking care of carry-over.
+
+6. [Leetcode 23 - Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+
+    * solve by using a priority queue (min-heap) to merge k sorted linked lists into one sorted linked list.
+
+7. [Leetcode 19 - Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+    * solve by using the two-pointer technique to find the nth node from the end of the linked list and remove it.
+
+8. [Leetcode 25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+
+    * solve by iterating through the linked list in groups of k nodes, reversing each group, and then linking them together.
+
+9. [Leetcode 146 - LRU Cache](https://leetcode.com/problems/lru-cache/)
+
+    * solve by using a combination of a doubly linked list and a hash map to implement the LRU cache.
+
+10. [Leetcode 138 - Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+
+    * solve by using a hash map to keep track of the mapping between the original nodes and the copied nodes, or by using the next pointer to create a copy of the linked list in place.

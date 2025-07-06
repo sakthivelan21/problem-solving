@@ -1,5 +1,15 @@
 ### NeetCode Problem Solving Guide
 
+#### Two Sum 
+
+1. [LeetCode 1 - Two Sum](https://leetcode.com/problems/two-sum/)
+
+    * solve by using a hash map to store the indices of the numbers and checking if the complement exists in the map.
+
+2. [Leetcode 1865. Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/)
+
+    * solve by using a hash map to store the frequency of each number and checking if the complement exists in the map.
+
 #### Stack 
 
 1. [LeetCode 155 - Min Stack Problem](https://leetcode.com/problems/min-stack/)
@@ -72,3 +82,19 @@
 10. [Leetcode 138 - Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 
     * solve by using a hash map to keep track of the mapping between the original nodes and the copied nodes, or by using the next pointer to create a copy of the linked list in place.
+
+11. [Leetcode 2130 - Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)
+
+    * solve by finding the middle of the linked list, reversing the second half, and then calculating the maximum twin sum by iterating through both halves.
+
+12. [Leetcode 142 - Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+
+    * solve by using the two-pointer technique to find the starting node of the cycle in the linked list.
+
+13. [Leetcode 707 - Design Linked List](https://leetcode.com/problems/design-linked-list/)
+
+    * solve by implementing a linked list with methods for adding, deleting, and retrieving nodes.
+
+14. [1472. Design Browser History](https://leetcode.com/problems/design-browser-history/)
+
+    * solve by using a doubly linked list to keep track of the history of visited pages, allowing for efficient navigation back and forth.

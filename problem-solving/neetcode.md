@@ -98,3 +98,87 @@
 14. [1472. Design Browser History](https://leetcode.com/problems/design-browser-history/)
 
     * solve by using a doubly linked list to keep track of the history of visited pages, allowing for efficient navigation back and forth.
+
+### Binary Search
+
+1. [LeetCode 704 - Binary Search](https://leetcode.com/problems/binary-search/)
+
+    * solve by implementing the binary search algorithm to find the target value in a sorted array.
+
+2. [Leetcode 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+    * solve by treating the 2D matrix as a 1D array and applying binary search to find the target value.
+
+3. [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+
+    * solve by using binary search to find the minimum eating speed that allows Koko to finish eating all the bananas within a given time limit.
+
+    * range of values is from 1 to the maximum number of bananas in any pile. 
+
+    * use binary search on that range and check if the current speed can finish all bananas in the given time.
+
+4. [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
+    * solve by using binary search to find the minimum element in a rotated sorted array.
+
+    * move left to the second half of the array if the middle element is greater than the rightmost element, otherwise move right to be mid.
+
+    * continue until left is less than right.
+
+5. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+    * solve by using binary search to find the minimum element in a rotated sorted array.
+
+    * move left to the second half of the array if the middle element is greater than the rightmost element, otherwise move right to be mid.
+
+    * continue until left is less than right.
+
+    * then search first half or second half based on the target value.
+
+6. [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)
+
+    * solve by using a hash map to store the key-value pairs along with their timestamps.
+
+    * for the get method, use binary search on the timestamps to find the most recent value for the given key.
+
+7. [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+
+    * solve by using binary search to guess the number in a range from 1 to n.
+
+    * use the provided guess API to check if the guessed number is too high, too low, or correct.
+
+8. [278. First Bad Version](https://leetcode.com/problems/first-bad-version/)
+
+    * solve by using binary search to find the first bad version in a range from 1 to n.
+
+    * use the provided isBadVersion API to check if a version is bad or not.
+
+9. [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+
+    * solve by using binary search to find the median of two sorted arrays.
+
+    * partition both arrays and ensure that the left partition is less than or equal to the right partition.
+
+    * calculate the median based on the maximum of the left partition and the minimum of the right partition.
+
+
+### Greedy approaches
+
+1. [Leetcode 1353. Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)
+
+    * solve by sorting the events by their end times and using a greedy approach to select the maximum number of non-overlapping events 
+
+    * it is solved by iterating through the events and using a priority queue to keep track of the end times of the selected events.
+
+2. [3440. Reschedule Meetings for Maximum Free Time II](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/)
+
+    * solved by calculating the gaps between meetings. 
+
+    * approach is to find the maximum long interval by simpling thinking the current meeting is not present and can be moved back or front by calculating leftLargeInterval and rightLargeInterval.
+
+### Sliding Window 
+
+1. [3439. Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/)
+
+    * solve by using a sliding window approach to find the maximum free time between meetings.
+

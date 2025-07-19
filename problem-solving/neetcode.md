@@ -182,3 +182,52 @@
 
     * solve by using a sliding window approach to find the maximum free time between meetings.
 
+2. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+    * solve by using a sliding window approach to find the maximum profit from buying and selling stock.
+
+3. [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+    * solve by using a sliding window approach to find the longest substring without repeating characters.
+
+4. [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+
+    * solve by using a sliding window approach to find the minimum size subarray whose sum is greater than or equal to a given target.
+
+5. [1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/)
+
+    * solve by using a sliding window approach to count the number of subarrays of size k whose average is greater than or equal to a given threshold.
+
+6. [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+
+    * solve by using a sliding window approach to check if one string is a permutation of another string.
+
+7. [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+
+    * solve by using a deque to keep track of the maximum values in the current sliding window.
+
+8. [76. Minimum Window Substring -improve](https://leetcode.com/problems/minimum-window-substring/) 
+
+    * solve by using a sliding window approach to find the minimum window substring that contains all the characters of a given string.
+
+    * could have improved solving by removal character matching the characters in the window with the target string.
+
+9. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+
+    * solve by using a sliding window approach to find the length of the longest substring that can be formed by replacing at most k characters.
+
+### Binary Manipulations
+
+1.[1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)
+
+    * solve by iterating through the linked list and converting the binary number to an integer by shifting the bits and adding the current bit value.
+
+### Trees 
+
+1. [701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
+
+    * solve by recursively finding the correct position to insert the new value in the binary search tree.
+
+2. [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+    * solve by using recursion or an iterative approach with a stack to perform inorder traversal of the binary tree.

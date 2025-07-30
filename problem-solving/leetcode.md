@@ -164,6 +164,8 @@
 
 ### Greedy approaches
 
+
+
 1. [Leetcode 1353. Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)
 
     * solve by sorting the events by their end times and using a greedy approach to select the maximum number of non-overlapping events 
@@ -175,6 +177,12 @@
     * solved by calculating the gaps between meetings. 
 
     * approach is to find the maximum long interval by simpling thinking the current meeting is not present and can be moved back or front by calculating leftLargeInterval and rightLargeInterval.
+
+3. [1717. Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)
+
+    * solve by using a greedy approach to remove substrings from the string and calculate the maximum score. by using stack
+
+    * iterate through the string and whenever a substring is found, remove it and update the score.
 
 ### Sliding Window 
 
@@ -222,6 +230,10 @@
 
     * solve by iterating through the linked list and converting the binary number to an integer by shifting the bits and adding the current bit value.
 
+2.[2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/)
+
+    * solve by iterating through the array and using a sliding window approach to find the longest subarray with the maximum bitwise AND.
+
 ### Trees 
 
 1. [701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
@@ -231,3 +243,19 @@
 2. [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
     * solve by using recursion or an iterative approach with a stack to perform inorder traversal of the binary tree.
+
+3. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+    * solve by using recursion to find the maximum depth of the binary tree.
+
+4. [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+    * solve by using a queue to perform level order traversal of the binary tree.
+
+5. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+
+    * solve by using an inorder traversal to find the kth smallest element in a binary search tree.
+
+6. [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+
+    * solve by using recursion to find the diameter of the binary tree, which is the longest path between any two nodes.

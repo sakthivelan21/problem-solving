@@ -195,3 +195,24 @@
 
 12. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)  
     <!-- Solution file not found -->
+   
+13. [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)  
+    [🗂️ View Solution](./Trees/check_balanced_binary_tree.cc)
+   
+14. [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)  
+    [🗂️ View Solution](./Trees/sub_tree_of_another_tree.cc)
+   
+15. [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)  
+    [🗂️ View Solution](./Trees/lowest_common_ancestor_of_BST.cc)
+
+16. [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)  
+    [🗂️ View Solution](./Trees/count_good_nodes_in_binary_tree.cc)
+
+17. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)  
+    [🗂️ View Solution](./Trees/validate_binary_search_tree.cc)
+
+18. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  
+    [🗂️ View Solution](./Trees/serialize_and_deserialize_binary_tree.cc)
+
+19. [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)  
+    [🗂️ View Solution](./Trees/binary_tree_maximum_path_sum.cc)

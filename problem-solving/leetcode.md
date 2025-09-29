@@ -216,3 +216,12 @@
 
 19. [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)  
     [🗂️ View Solution](./Trees/binary_tree_maximum_path_sum.cc)
+
+20. [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)  
+    [🗂️ View Solution](./Trees/Trie/trie_word_dictionary.cc)
+
+21. [212. Word Search II](https://leetcode.com/problems/word-search-ii/)  
+    [🗂️ View Solution](./Trees/Trie/word_search_2.cc)
+
+22. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)  
+    [🗂️ View Solution](./Trees/Trie/task_scheduler.cc)

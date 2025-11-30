@@ -11,6 +11,19 @@
 3. [2561. Rearranging Fruits](https://leetcode.com/problems/rearranging-fruits/)  
    [🗂️ View Solution](./arrays-and-hashing/balance-baskets.cc)
 
+### dfs 
+
+1. [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+    [🗂️ View Solution](./dfs/pacific-atlantic-water-flow.cc)
+
+2. [79. Word Search](https://leetcode.com/problems/word-search/)  
+   [🗂️ View Solution](./dfs/word-search.cc)
+
+3. [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)  
+   [🗂️ View Solution](./dfs/palindrome-partitioning.cc)
+
+4. [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/)  
+   [🗂️ View Solution](./dfs/n-queens-2.cc)
 #### Stack 
 
 1. [LeetCode 155 - Min Stack Problem](https://leetcode.com/problems/min-stack/)  
@@ -225,3 +238,8 @@
 
 22. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)  
     [🗂️ View Solution](./Trees/Trie/task_scheduler.cc)
+   
+### Dynamic Programming
+
+1. [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)  
+   [🗂️ View Solution](./dynamic-programming/climbing-stairs.cc)

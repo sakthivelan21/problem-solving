@@ -59,7 +59,18 @@
 2. [LeetCode 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)  
    [🗂️ View Solution](./binary-search/search-a-2d-matrix-74.cpp)
 
+#### Sliding Window 
+
+2. [LeetCode 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+   [🗂️ View Solution](./sliding-window/longest-substring-without-repeat-3.cpp)
+
 #### Linked List
 
 1.[LeetCode 206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  
    [🗂️ View Solution](./linked-list/reverse-linked-list-206.cpp)
+
+2. [LeetCode 21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+   [🗂️ View Solution](./linked-list/merge-two-sorted-list-21.cpp)
+
+3. [LeetCode 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
+   [🗂️ View Solution](./linked-list/linked-list-cycle-141.cpp)

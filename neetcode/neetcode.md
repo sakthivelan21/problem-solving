@@ -74,3 +74,17 @@
 
 3. [LeetCode 141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
    [🗂️ View Solution](./linked-list/linked-list-cycle-141.cpp)
+
+### Tree 
+
+1. [LeetCode 104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+   [🗂️ View Solution](./tree/maximum-depth-of-binary-tree-104.cpp)
+
+2. [LeetCode 100.Same Tree](https://leetcode.com/problems/same-tree/)
+   [🗂️ View Solution](./tree/same-tree-100.cpp)
+
+3. [LeetCode 543.Diameter of the Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/submissions/2042467660/)
+   [🗂️ View Solution](./tree/diameter-of-the-binary-tree-543.cpp)
+
+4. [LeetCode 102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
+   [🗂️ View Solution](./tree/binary-tree-level-order-traversal-102.cpp)

@@ -37,6 +37,9 @@
 2. [LeetCode 167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)  
    [🗂️ View Solution](./two-pointers/two-sum-ii-167.cpp)
 
+3. [Leetcode 10. 3sum](https://leetcode.com/problems/3sum/)
+   [🗂️ View Solution](./two-pointers/3sum-10.cpp)
+
 #### Stack 
 
 1. [LeetCode 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)  

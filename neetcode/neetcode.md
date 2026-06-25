@@ -40,6 +40,9 @@
 3. [Leetcode 10. 3sum](https://leetcode.com/problems/3sum/)
    [🗂️ View Solution](./two-pointers/3sum-10.cpp)
 
+4. [LeetCode 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
+   [🗂️ View Solution](./two-pointers/container-with-most-water-11.cpp)
+
 #### Stack 
 
 1. [LeetCode 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)  

@@ -77,30 +77,115 @@
 
    * space complexity - O(n + m) Where m is the sum of lengths of all the strings and n is the number of strings.
 
+7. [LeetCode 238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)  
+   [🗂️ View Solution](./arrays-and-hashing/product-of-array-except-self-238.cpp)
+
+   * solution 
+
+      * prefix and suffix product array to store the product of all the elements before and after the current element.
+
+      * what we have tried is solving with two separate arrays, we can improved it to single array and storing it optimaly
+
+      * time complexity - O(n*2)
+
+      * space complexity - O(1) since we are not using any extra space except for the output array.
 
 
 6. [LeetCode 36 - Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)  
    [🗂️ View Solution](./arrays-and-hashing/valid-sudoku-36.cpp)
 
+   * solution 
+   
+      * use 3 hash tables to store the row, column and box values and check if the value is already present in the hash table.
+
+      * time complexity - O(n^2) where n is the size of the board
+
+      * space complexity - O(n^2) where n is the size of the board
+
+      * can be improved to O(n) space complexity by using bit manipulation to store the values in the hash table.
+
 7. [LeetCode 128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)  
    [🗂️ View Solution](./arrays-and-hashing/longest-consecutive-sequence-128.cpp)
 
-8. [LeetCode 238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)  
-   [🗂️ View Solution](./arrays-and-hashing/product-of-array-except-self-238.cpp)
+   * solution 
+
+      * use hashtable to store all values and then iterate each one, to fetch the previous n-1 value if it's not presnet then unique and iter from it to find the count of consecutive values.
+
+      * time complexity - O(n) where n is the number of elements in the input array.
+
+      * space complexity - O(n) where n is the number of elements in the input array.
 
 #### Two Pointers
 
 1. [LeetCode 125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)  
    [🗂️ View Solution](./two-pointers/valid-palindrome-125.cpp)
 
+   * solution
+
+      * two pointer from start and end of the string and check if the characters are equal, if not return false.
+
+      * time complexity - O(n) where n is the length of the string.
+
+      * space complexity - O(1) since we are not using any extra space except for the input string.
+
 2. [LeetCode 167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)  
    [🗂️ View Solution](./two-pointers/two-sum-ii-167.cpp)
+
+   * solution 
+
+      * left and right pointer from start and end of the array and check if the sum of the two elements is equal to the target, if not move the left or right pointer accordingly.
+
+      * time complexity - O(n) where n is the length of the array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
 
 3. [Leetcode 10. 3sum](https://leetcode.com/problems/3sum/)
    [🗂️ View Solution](./two-pointers/3sum-10.cpp)
 
+   * solution 
+
+      *  sort the array and have a common for loop 
+
+      * then have two pointers from it's next element and the end of the array and check if the sum of the three elements is equal to the target, if not move the left or right pointer accordingly.
+
+      * time complexity - O(n^2) where n is the length of the array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
 4. [LeetCode 11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
    [🗂️ View Solution](./two-pointers/container-with-most-water-11.cpp)
+
+   * solution 
+
+      * left and right pointer from start and end of the array and check if the area of the two elements is greater than the max area, if not move the left or right pointer accordingly.
+
+      * time complexity - O(n) where n is the length of the array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+5. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+   [🗂️ View Solution](./two-pointers/remove-duplicates-from-sorted-array-26.cpp)
+
+   * solution 
+
+      * have a left pointer and start from 1 index and check if the current element is equal to the previous element, if not then move the left pointer and update the value at left pointer with the current element.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(n) where n is the length of the array.
+
+6. [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+   [🗂️ View Solution](./two-pointers/remove-duplicates-from-sorted-array-ii-80.cpp)
+
+   * solution 
+   
+      * have a left pointer and start from 2 index and check if the current element is equal to the element at left pointer - 2, if not then move the left pointer and update the value at left pointer with the current element.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(n) where n is the length of the array.
+
+7. 
 
 #### Stack 
 

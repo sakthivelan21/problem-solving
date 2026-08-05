@@ -185,21 +185,99 @@
 
       * time complexity - O(n) where n is the length of the array.
 
-7. 
+7. [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+   [🗂️ View Solution](./two-pointers/trapping-rain-water-42.cpp)
+
+   * solution 
+
+      * one way is to solve it with maxleft prefix and maxright suffix array and then calculate the trapped water at each index.
+
+      * val = min(maxleft[i], maxright[i]) - height[i], sum the result it will be same 
+
+      * but space complexity is O(n) for maxleft and maxright array.
+
+      * have a left and right pointer and check the max height of the left and right pointer, if the left max height is less than the right max height, then move the left pointer and calculate the trapped water in left side, else move the right pointer and calculate the trapped water in right side.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(n) where n is the length of the array.
 
 #### Stack 
 
 1. [LeetCode 20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)  
    [🗂️ View Solution](./stack/valid-parentheses-20.cpp)
 
-2. [LeetCode 155. Min Stack](https://leetcode.com/problems/min-stack/)  
+      * solution 
+
+         * use stack to push in the opening brackets and popup as per closing brackets and check if the stack is empty at the end.
+
+         * space complexity - O(n) where n is the length of the string.
+
+         * time complexity - O(n) where n is the length of the string.
+
+2. [LeetCode 155. Min Stack](https://leetcode.com/problems/min-stack/)  f
    [🗂️ View Solution](./stack/min-stack-155.cpp)
+
+      * solution 
+         
+         * use single stack and push pair<int, int> to store the value and the minimum value at that point.
+
+         * so when we pop the stack, we can get the minimum value at that point.
+
+         * space complexity - O(n) where n is the number of elements in the stack.
+
+         * time complexity - O(1) for push, pop, top and getMin operations.
 
 3. [LeetCode 150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)  
    [🗂️ View Solution](./stack/evaluate-reverse-polish-notation-150.cpp)
 
+   * solution 
+
+      * use stack to push in the numbers and when we encounter an operator, pop the top two numbers from the stack and perform the operation and push the result back to the stack.
+
+      * space complexity - O(n) where n is the number of elements in the input array.
+
+      * time complexity - O(n) where n is the number of elements in the input array.
+
+
 4. [LeetCode 739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)  
    [🗂️ View Solution](./stack/daily-temperatures-739.cpp)
+
+   * solution 
+
+      * use stack to store the index of the temperatures and when we encounter a temperature greater than the top of the stack, 
+      
+      * pop the index from the stack and calculate the difference between the current index and the popped index and store it in the result array.
+
+      * space complexity - O(n) where n is the number of elements in the input array.
+
+      * time complexity - O(n) where n is the number of elements in the input array.
+
+5. [LeetCode 853. Car Fleet](https://leetcode.com/problems/car-fleet/)  
+   [🗂️ View Solution](./stack/car-fleet-853.cpp)
+
+   * solution 
+
+      * sort the cars based on their starting position and then iterate from the end of the array and calculate the time taken for each car to reach the target.
+
+      * if the time taken for the current car is greater than the time taken for the previous car, then it will form a new fleet.
+
+      * space complexity - O(n) where n is the number of elements in the input array.
+
+      * time complexity - O(n log n) where n is the number of elements in the input array.
+
+6. [LeetCode 84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)  
+   [🗂️ View Solution](./stack/largest-rectangle-in-histogram-84.cpp)
+
+   * solution 
+
+      * use stack to store the index of the heights and when we encounter a height less than the top of the stack, 
+      
+      * pop the index from the stack and calculate the area of the rectangle with the popped height as the smallest height.
+
+      * space complexity - O(n) where n is the number of elements in the input array.
+
+      * time complexity - O(n) where n is the number of elements in the input array.
 
 #### Binary Search
 

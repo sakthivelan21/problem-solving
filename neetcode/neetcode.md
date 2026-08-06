@@ -284,8 +284,56 @@
 1. [LeetCode 704. Binary Search](https://leetcode.com/problems/binary-search/)  
    [🗂️ View Solution](./binary-search/binary-search-704.cpp)
 
+   * solution 
+
+      * use binary search to find the target in the sorted array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(log n) where n is the length of the array.
+
+      * mid = left + (right - left) / 2; to avoid integer overflow.
+
 2. [LeetCode 74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)  
    [🗂️ View Solution](./binary-search/search-a-2d-matrix-74.cpp)
+
+   * solution 
+   
+      * use binary search to find the target in the sorted 2D matrix. we should treat the 2D matrix as a 1D array and use binary search to find the target.
+
+      ```cpp
+            pair<int,int> commute_point(int mid,int row,int col,int length)
+         {
+            pair<int,int> p;
+            // use the col to find the row and col of the mid point in the 2D matrix.
+            p.first = mid/col;
+
+            p.second =  mid %col ;
+
+            return p;
+         }
+      ```
+
+      * space complexity - O(1) since we are not using any extra space except for the input matrix.
+
+      * time complexity - O(log (m * n)) where m is the number of rows and n is the number of columns in the matrix.
+
+3. [LeetCode 875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)  
+   [🗂️ View Solution](./binary-search/koko-eating-bananas-875.cpp)
+
+   * solution 
+
+      * find maximum hour first 
+
+      * then try to use the binary search to pick a hour from 1 to max hour and check if the current hour is enough to eat all the bananas in the piles.
+
+      * By res += ceil(pile / mid) to calculate the total hours needed to eat all the bananas in the piles.
+
+      * if mid is enough to eat all the bananas in the piles, then we can try to find a smaller hour by moving the right pointer to mid - 1, else we need to increase the hour by moving the left pointer to mid + 1.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(n log m) where n is the number of piles and m is the maximum number of bananas in a pile.
 
 #### Sliding Window 
 

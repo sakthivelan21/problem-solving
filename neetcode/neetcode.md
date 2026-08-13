@@ -335,6 +335,67 @@
 
       * time complexity - O(n log m) where n is the number of piles and m is the maximum number of bananas in a pile.
 
+4. [LeetCode 153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)  
+   [🗂️ View Solution](./binary-search/find-minimum-in-rotated-sorted-array-153.cpp)
+
+   * solution 
+
+      * use binary search to find the minimum element in the rotated sorted array.
+
+      * if the mid element is greater than the right element, then the minimum element is in the right half of the array, else it is in the left half of the array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(log n) where n is the length of the array.
+
+5. [LeetCode 33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)  
+   [🗂️ View Solution](./binary-search/search-in-rotated-sorted-array-33.cpp)
+
+   * solution 
+
+      * use binary search to find the target in the rotated sorted array.
+
+      * if the mid element is greater than the left element, then the left half of the array is sorted, else the right half of the array is sorted.
+
+      * if the target is in the sorted half of the array, then we can move the left or right pointer accordingly, else we need to search in the other half of the array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
+      * time complexity - O(log n) where n is the length of the array.
+
+
+6. [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)  
+   [🗂️ View Solution](./binary-search/time-based-key-value-store-981.cpp)
+
+   * solution 
+
+      * use binary search to find the value of the key at the given timestamp.
+
+      * store in hashmap<string, Map<int, string>> to store the key and the timestamp and the value.
+
+      * use upper_bound to find the value of the key at the given timestamp.
+
+      * space complexity - O(n) where n is the number of key-value pairs in the input.
+
+      * time complexity - O(log n) where n is the number of key-value pairs in the input.
+
+7. [LeetCode 4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)  
+   [🗂️ View Solution](./binary-search/median-of-two-sorted-arrays-4.cpp)
+
+   * solution 
+
+      * use binary search to find the median of the two sorted arrays.
+
+      * we can use binary search on the smaller array and find the partition point in both arrays.
+
+      * we keep A array as smaller array and B array as larger array, then we can find the partition point in A array and then find the partition point in B array.
+
+      * check code for this logic
+
+      * space complexity - O(1) since we are not using any extra space except for the input arrays.
+
+      * time complexity - O(log(min(n, m))) where n and m are the lengths of the two arrays.
+
 #### Sliding Window 
 
 2. [LeetCode 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)

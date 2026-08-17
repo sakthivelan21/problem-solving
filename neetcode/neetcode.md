@@ -398,8 +398,55 @@
 
 #### Sliding Window 
 
+1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  
+   [🗂️ View Solution](./sliding-window/best-time-to-buy-and-sell-stock-121.cpp)
+
+   * solution 
+
+      * use a single left pointer to keep track of minimum price and iterate through the array to find the maximum profit by selling at the current price and buying at the minimum price.
+
+      * time complexity - O(n) where n is the length of the array.
+
+      * space complexity - O(1) since we are not using any extra space except for the input array.
+
 2. [LeetCode 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
    [🗂️ View Solution](./sliding-window/longest-substring-without-repeat-3.cpp)
+
+   * solution 
+
+      * use a hash table to store the characters and their indices and use two pointers to keep track of the current substring.
+
+      * if the character is already in the hash table, move the left pointer to the right of the previous index of the character.
+
+      * time complexity - O(n) where n is the length of the string.
+
+      * space complexity - O(n) where n is the length of the string.
+
+3. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)  
+   [🗂️ View Solution](./sliding-window/longest-repeating-character-replacement.cpp) 
+
+   * solution 
+
+      * keep the count of frequency in a map , then pick the max left from frequency map and use it subtract and get diff of non unique values 
+
+      * if non unique values > k , start moving left pointer of window and compute max_length 
+
+      * time complexity - o(n) where n is the length of the string 
+
+      * space complexity - o(n) where n is the length of the string
+
+4. [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)  
+   [🗂️ View Solution](./sliding-window/permutation-in-string-567.cpp)
+
+   * solution 
+
+      * keep the count of small string in frequency map 
+
+      * and iterate and build a new map of second string and try to check complete frequency of the map when the size is same of small map
+
+      * time complexity - o(n) where n is the length of the string 
+
+      * space complexity - o(n+m) where n and m is the length of the two strings
 
 #### Linked List
 

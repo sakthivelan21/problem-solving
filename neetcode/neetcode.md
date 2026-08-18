@@ -448,6 +448,34 @@
 
       * space complexity - o(n+m) where n and m is the length of the two strings
 
+5. [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)  
+   [🗂️ View Solution](./sliding-window/sliding-window-maximum-239.cpp)
+
+   * solution 
+
+      * use deque to store the indices of the elements in the current window and maintain the decreasing order of the elements in the deque.
+
+      * if the current element is greater than the element at the back of the deque, pop the back of the deque until the current element is less than or equal to the element at the back of the deque.
+
+      * if the front of the deque is out of the current window, pop the front of the deque.
+
+      * time complexity - O(n) where n is the length of the array.
+
+      * space complexity - O(k) where k is the size of the window.
+
+6. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)  
+   [🗂️ View Solution](./sliding-window/minimum-window-substring-76.cpp)
+
+   * solution 
+
+      * use one hash table to store the t map frequency, and other map iterate and update frequency of s_map
+
+      * check if need frequency of t is satisfied by s_map, if yes then try to move left pointer to get minimum window substring.
+
+      * time complexity - O(n) where n is the length of the string.
+
+      * space complexity - O(n) where n is the length of the string.
+
 #### Linked List
 
 1.[LeetCode 206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  
